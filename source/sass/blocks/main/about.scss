@@ -1,0 +1,130 @@
+.about__container {
+  display: flex;
+  align-items: flex-start;
+  min-height: 320px;
+  max-width: 1370px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+  }
+}
+
+.about__container img {
+  @include vp-1023 {
+    margin-left: -4px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__info-wrapper {
+  padding-left: 100px;
+  max-width: 1070px;
+  box-sizing: border-box;
+
+  @include vp-1023 {
+    padding-left: 29px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.about__info-wrapper h2 {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  margin-top: -4px;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.about__text-box {
+  margin-top: -30px;
+  max-height: min-content;
+  margin-bottom: 27px;
+  overflow: hidden;
+  max-width: 970px;
+
+  @include vp-1023 {
+    margin-top: -35px;
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    max-height: 220px;
+    margin-top: -25px;
+    margin-bottom: 16px;
+  }
+}
+
+.about__text-box br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.all-text .about__text-box {
+  max-height: min-content;
+}
+
+.about__text-box p {
+  font-family: $ff-placeholder-decorative-regular;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about__rest-text {
+  display: none;
+}
+
+.all-text .about__rest-text {
+  display: block;
+}
+
+.about__button {
+  width: 180px;
+  height: 45px;
+  border: 1px solid $color-blue;
+  border-radius: 3px;
+  background-color: $color-default-white;
+  color: $color-blue;
+  font-size: 14px;
+  line-height: 16px;
+  user-select: none;
+
+  @include vp-767 {
+    width: 160px;
+    height: 35px;
+    margin-bottom: 80px;
+  }
+
+  &:hover {
+    background-color: $color-card-background;
+    color: $color-default-black;
+  }
+
+  &:focus {
+    background-color: $color-card-focus;
+    color: $color-default-black;
+  }
+}
+
+.wrapper--nojs .about__button {
+  display: none;
+}
