@@ -669,13 +669,7 @@ button,
 .intro {
   padding-top: 102px;
   padding-bottom: 51px;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(9%, #003D85), color-stop(87%, #B80027));
-  background: -o-linear-gradient(left bottom, #003D85 9%, #B80027 87%);
-  background: linear-gradient(to right top, #003D85 9%, #B80027 87%);
-  background-image: url("../img/gallery/background/intro-background@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: conic-gradient(at 25% 40%, #B80027 6%, #003D85 20%, #B80027 50%);
   z-index: -1;
 }
 
@@ -696,6 +690,9 @@ button,
   text-align: right;
   padding-right: 6%;
   padding-left: 8%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .intro__text-wrapper span {
@@ -838,6 +835,10 @@ button,
     margin-right: -3px;
   }
 
+  .intro__text-center {
+    margin: 0;
+  }
+
   .intro__text-wrapper span {
     font-size: 34px;
     line-height: 41px;
@@ -906,9 +907,17 @@ button,
   }
 
   .intro__text-wrapper {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .intro__text-center {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 0 auto;
   }
 
   .intro__text-wrapper span {
@@ -925,7 +934,7 @@ button,
   }
 
   .intro__text-wrapper a {
-    margin-right: -1px;
+    margin-right: 0;
     margin-top: -91px;
     width: 100%;
     height: 63px;
