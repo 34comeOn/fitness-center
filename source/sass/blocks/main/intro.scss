@@ -1,0 +1,83 @@
+.intro {
+  padding-top: 50px;
+  background: linear-gradient(to right top, #003D85 9%, #B80027 87%);
+  background-image: url("../img/gallery/background/intro-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.intro__container {
+  display: flex;
+  min-height: 608px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.intro__text-wrapper {
+  text-align: right;
+  padding-right: 64px;
+  padding-left: 90px;
+}
+
+.intro__text-wrapper span {
+  font-size: 49px;
+  line-height: 59px;
+  font-family: $ff-placeholder-decorative-regular;
+  color: $color-default-white;
+  margin-top: 122px;
+  display: block;
+}
+
+.intro__text-wrapper h2 {
+  font-size: 109px;
+  line-height: 109px;
+  font-family: $ff-placeholder-decorative-bold;
+  font-weight: 700;
+  color: $color-default-white;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.intro__text-wrapper a {
+  color: $color-default-white;
+  border: solid 4px $color-default-white;
+  width: 230px;
+  height: 57px;
+  margin-top: -100px;
+  padding-top: 12px;
+  margin-left: auto;
+}
+
+.intro__list {
+  position: relative;
+  left: -248px;
+  top: -186px;
+}
+.intro__container img{
+  margin-right: 187px;
+}
+
+.intro__list li {
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.intro__sochials-list {
+  padding-top: 437px;
+  margin-left: 64px;
+}
+
+.intro__sochials-list li {
+  margin-bottom: 6px;
+}
+
+.intro__sochials-list a {
+  color: $color-default-white;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}

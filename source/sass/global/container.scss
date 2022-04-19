@@ -3,13 +3,13 @@
   max-width: 1366px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 0 103px;
 
   @include vp-1199 {
-    padding: 0 50px;
+    padding: 0 45px;
   }
 
   @include vp-767 {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }

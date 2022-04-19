@@ -3,3 +3,12 @@
   grid-column: 1/2;
   // background-color: $color-very-dark;
 }
+
+.footer__navigation a {
+  font-size: 71px;
+  line-height: 106px;
+  font-family: $ff-placeholder-main-bold;
+  background: linear-gradient(to bottom, $color-basic-red 0%, $color-basic-blue 100%);
+  background-clip: text;
+  color: transparent;
+}

@@ -1,4 +1,19 @@
 .header {
   grid-row: 1/2;
   grid-column: 1/2;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__container a {
+  font-size: 26px;
+  line-height: 26px;
+  margin-top: 34px;
+  color: $color-default-white;
 }
