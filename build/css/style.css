@@ -651,7 +651,7 @@ button,
 }
 
 .header__container a {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 26px;
   margin-top: 34px;
   color: #f8fdff;
@@ -667,7 +667,8 @@ button,
 }
 
 .intro {
-  padding-top: 50px;
+  padding-top: 102px;
+  padding-bottom: 51px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(9%, #003D85), color-stop(87%, #B80027));
   background: -o-linear-gradient(left bottom, #003D85 9%, #B80027 87%);
   background: linear-gradient(to right top, #003D85 9%, #B80027 87%);
@@ -682,58 +683,65 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 608px;
+  min-height: 503px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .intro__text-wrapper {
   text-align: right;
-  padding-right: 64px;
-  padding-left: 90px;
+  padding-right: 6%;
+  padding-left: 8%;
 }
 
 .intro__text-wrapper span {
-  font-size: 49px;
+  font-size: 50px;
   line-height: 59px;
   font-family: "BebasNeue-Regular", "Arial", sans-serif;
   color: #f8fdff;
-  margin-top: 122px;
+  margin-top: 18px;
   display: block;
 }
 
 .intro__text-wrapper h2 {
-  font-size: 109px;
-  line-height: 109px;
+  font-size: 116px;
+  line-height: 108px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
   color: #f8fdff;
-  margin-top: 10px;
+  margin-top: 9px;
   width: 300px;
 }
 
 .intro__text-wrapper a {
   color: #f8fdff;
+  font-size: 13px;
   border: solid 4px #f8fdff;
-  width: 230px;
-  height: 57px;
-  margin-top: -100px;
-  padding-top: 12px;
+  width: 234px;
+  height: 61px;
+  margin-top: -103px;
+  padding-top: 15px;
   margin-left: auto;
+  margin-right: -4px;
 }
 
 .intro__list {
   position: relative;
-  left: -248px;
+  left: -262px;
   top: -186px;
 }
 
 .intro__container img {
-  margin-right: 187px;
+  margin-top: -51px;
+  margin-right: auto;
+  width: 43%;
+  min-width: 390px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .intro__list li {
@@ -743,12 +751,11 @@ button,
 }
 
 .intro__sochials-list {
-  padding-top: 437px;
-  margin-left: 64px;
+  padding-top: 349px;
 }
 
 .intro__sochials-list li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .intro__sochials-list a {
@@ -800,6 +807,70 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .header__container {
+    height: 66px;
+  }
+
+  .header__container a {
+    font-size: 22px;
+  }
+
+  .header__logo {
+    width: 82px;
+  }
+
+  .intro {
+    padding-top: 83px;
+    padding-bottom: 81px;
+  }
+
+  .intro__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    min-height: 0;
+  }
+
+  .intro__text-wrapper {
+    padding-right: 5%;
+    padding-left: 3%;
+    margin-right: -3px;
+  }
+
+  .intro__text-wrapper span {
+    font-size: 34px;
+    line-height: 41px;
+    margin-top: 47px;
+  }
+
+  .intro__text-wrapper h2 {
+    font-size: 92px;
+    line-height: 85px;
+    margin-top: 6px;
+  }
+
+  .intro__text-wrapper a {
+    margin-top: -98px;
+    width: 187px;
+  }
+
+  .intro__list {
+    left: -208px;
+    top: -157px;
+  }
+
+  .intro__container img {
+    margin-top: 0;
+    width: 324px;
+    min-width: 324px;
+    height: 390px;
+    margin-right: 0;
+  }
+
+  .intro__sochials-list {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -814,5 +885,58 @@ button,
 
   .container {
     padding: 0 15px;
+  }
+
+  .header__container {
+    height: 29px;
+  }
+
+  .header__container a {
+    font-size: 18px;
+    line-height: 16px;
+    margin-top: 26px;
+  }
+
+  .header__logo {
+    width: 68px;
+  }
+
+  .intro {
+    padding-bottom: 78px;
+  }
+
+  .intro__text-wrapper {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .intro__text-wrapper span {
+    font-size: 29px;
+    line-height: 40px;
+    margin-top: 23px;
+  }
+
+  .intro__text-wrapper h2 {
+    width: 290px;
+    font-size: 84px;
+    line-height: 78px;
+    margin-top: 6px;
+  }
+
+  .intro__text-wrapper a {
+    margin-right: -1px;
+    margin-top: -91px;
+    width: 100%;
+    height: 63px;
+  }
+
+  .intro__list {
+    left: -176px;
+    top: -145px;
+  }
+
+  .intro__container img {
+    display: none;
   }
 }
