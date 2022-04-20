@@ -1,0 +1,30 @@
+.subscription {
+  background-color: $color-background-grey;
+}
+
+.subscription__container h2{
+  text-transform: uppercase;
+  font-size: 49px;
+  font-family: $ff-placeholder-decorative-bold;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.subscription__button-list {
+  text-align: center;
+  width: 341px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription__button-tab {
+  background-color: $color-transparent;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: lowercase;
+  border: none;
+  font-family: $ff-placeholder-main-regular;
+  font-weight: 400;
+  opacity: 0.5;
+}

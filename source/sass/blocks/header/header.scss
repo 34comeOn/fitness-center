@@ -34,6 +34,14 @@
     line-height: 16px;
     margin-top: 26px;
   }
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    color: $color-text-dark;
+  }
 }
 
 .header__logo {
