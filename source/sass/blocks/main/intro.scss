@@ -1,18 +1,18 @@
 .intro {
   padding-top: 102px;
   padding-bottom: 51px;
-  background: conic-gradient(from 86deg at 22% 41%,#b80027 4%,#003d85 26%,#b80027 83%);
+  background: conic-gradient(from 86deg at 22% 41%, $color-gradient-red 4%, $color-gradient-blue 26%, $color-gradient-red 83%);
   z-index: -1;
 
   @include vp-1199 {
     padding-top: 83px;
     padding-bottom: 81px;
-    background: conic-gradient(from 86deg at 23% 41%,#b80027 7%,#003d85 30%,#b80027 94%);
+    background: conic-gradient(from 86deg at 23% 41%, $color-gradient-red 7%, $color-gradient-blue 30%, $color-gradient-red 94%);
   }
 
   @include vp-767 {
     padding-bottom: 78px;
-    background: conic-gradient(from 125deg at 34% 38%,#b80027 0%,#003d85 19%,#b80027 98%);
+    background: conic-gradient(from 125deg at 34% 38%, $color-gradient-red 0%, $color-gradient-blue 19%, $color-gradient-red 98%);
   }
 }
 
@@ -159,7 +159,6 @@
 .intro__img-container {
   width: 43%;
   margin-right: auto;
-  // min-width: 390px;
 
   @include vp-1199 {
     margin-right: 0;
@@ -170,12 +169,13 @@
   }
 }
 
-.intro__container img{
+.intro__container img {
   margin-top: -51px;
   margin-right: auto;
   width: 100%;
   min-width: 390px;
   object-fit: cover;
+  background-color: $color-default-black;
 
   @include vp-1199 {
     margin-top: 0;

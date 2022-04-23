@@ -58,7 +58,6 @@
               </a>
             </div>
               <picture class="intro__img-container">
-                <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/gallery/content/intro-tablet@1x.webp 1x, img/gallery/content/intro-tablet@2x.webp 2x"> -->
                 <img width="500" height="556" src="img/gallery/content/intro-desktop@1x.jpg" srcset="img/gallery/content/intro-desktop@1x.webp 1x, img/gallery/content/intro-desktop@2x.webp 2x" alt="Фото молодого человека в хорошей спортивной форме">
               </picture>
             <ul class="intro__sochials-list list">
@@ -103,13 +102,12 @@
               </p>
             </div>
             <picture class="about__img-container">
-              <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/gallery/content/about-tablet@1x.webp 1x, img/gallery/content/about-tablet@2x.webp 2x"> -->
               <img width="660" height="401" loading="lazy" src="img/gallery/content/about-desktop@1x.jpg" srcset="img/gallery/content/about-desktop@1x.webp 1x, img/gallery/content/about-desktop@2x.webp 2x" alt="Спортивный зал с большим количеством тренажеров">
             </picture>
-            <div class="about__video-container" alt="Нажать, чтобы посмотреть видеообзор Supergym" tabindex="0">
-              <iframe autoplay class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <div class="about__video-container" tabindex="0">
+              <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
-              <div class="about__video-cover" >
+              <div class="about__video-cover">
               </div>
             </div>
           </div>
@@ -125,24 +123,27 @@
             </h2>
             <ul class="subscription__button-list list">
               <li class="subscription__button-item">
-                <button class="subscription__button-tab button subscription__button-tab--active">
+                <button id="1month" class="subscription__button-tab button subscription__button-tab--active">
                   1 месяц
                 </button>
               </li>
               <li class="subscription__button-item">
-                <button class="subscription__button-tab button">
+                <button id="6month" class="subscription__button-tab button">
                   6 месяцев
                 </button>
               </li>
               <li class="subscription__button-item">
-                <button class="subscription__button-tab button">
+                <button id="12month" class="subscription__button-tab button">
                   12 месяцев
                 </button>
               </li>
             </ul>
             <ul class="subscription__tab-list list">
-              <li class="subscription__tab-item subscription__tab-item--active">
-                <ul class="subscription__card-list list">
+              <li class="subscription__tab-item subscription__tab-1month">
+                <h2>
+                  1 месяц
+                </h2>
+                <ul id="1month-subscription" class="subscription__card-list subscription__card-list--active list">
                   <li class="subscription__card-item">
                     <div class="subscription__card">
                       <h3>
@@ -151,8 +152,12 @@
                       <span>
                         12 занятий
                       </span>
-                      <strong>
+                      <strong data-parent="5000">
                         5000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -167,8 +172,12 @@
                       <span>
                         с 8:00 до 17:00
                       </span>
-                      <strong>
+                      <strong data-parent="1700">
                         1700
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -183,8 +192,12 @@
                       <span>
                         с 8:00 до 22:00
                       </span>
-                      <strong>
+                      <strong data-parent="2700">
                         2700
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -193,8 +206,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="subscription__tab-item">
-                <ul class="subscription__card-list list">
+              <li class="subscription__tab-item subscription__tab-6month">
+                <h2>
+                  6 месяцев
+                </h2>
+                <ul id="6month-subscription" class="subscription__card-list list">
                   <li class="subscription__card-item">
                     <div class="subscription__card">
                       <h3>
@@ -203,8 +219,12 @@
                       <span>
                         72 занятия
                       </span>
-                      <strong>
+                      <strong data-parent="30000">
                         30000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -219,8 +239,12 @@
                       <span>
                         с 8:00 до 17:00
                       </span>
-                      <strong>
+                      <strong data-parent="10000">
                         10000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -235,8 +259,12 @@
                       <span>
                         с 8:00 до 22:00
                       </span>
-                      <strong>
+                      <strong data-parent="15000">
                         15000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -245,8 +273,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="subscription__tab-item">
-                <ul class="subscription__card-list list">
+              <li class="subscription__tab-item subscription__tab-12month">
+                <h2>
+                  12 месяцев
+                </h2>
+                <ul id="12month-subscription" class="subscription__card-list list">
                   <li class="subscription__card-item">
                     <div class="subscription__card">
                       <h3>
@@ -255,8 +286,12 @@
                       <span>
                         144 занятия
                       </span>
-                      <strong>
+                      <strong data-parent="55000">
                         55000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -271,8 +306,12 @@
                       <span>
                         с 8:00 до 17:00
                       </span>
-                      <strong>
+                      <strong data-parent="1700 ">
                         17000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -287,8 +326,12 @@
                       <span>
                         с 8:00 до 22:00
                       </span>
-                      <strong>
+                      <strong data-parent="25000">
                         25000
+                        <svg class="subscription__icon" width="30" height="42">
+                          <use xlink:href="img/sprite/sprite.svg#ruble">
+                          </use>
+                        </svg>
                       </strong>
                       <a class="subscription__button button" href="#" aria-label="Нажать чтобы">
                         купить абонемент
@@ -417,7 +460,7 @@
           </nav> -->
         </div>
       </footer>
-
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

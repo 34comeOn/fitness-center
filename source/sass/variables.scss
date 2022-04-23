@@ -6,8 +6,17 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-background-grey:             #f8f9fc;
+$color-decorative-grey:             #e4e4e4;
 $color-basic-red:                   #d10a42;
+$color-gradient-red:                #b80027;
+$color-gradient-hover-red:          #ed0233;
+$color-gradient-border-red:         #d10a42;
 $color-basic-blue:                  #0041ca;
+$color-gradient-blue:               #003d85;
+$color-gradient-hover-blue:         #003eb7;
+$color-gradient-border-blue:        #00359f;
+$color-price:                       #103aae;
+$color-price-shadow:                rgba(232, 232, 232, 0.48);
 $color-text-dark:                   #102654;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
@@ -53,6 +62,7 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
+$vp-769:                            769px;
 $vp-830:                            830px;
 $vp-1024:                           1024px;
 $vp-1095:                           1095px;
