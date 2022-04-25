@@ -1,3 +1,7 @@
+// import Swiper from 'swiper';
+
+// import 'swiper/css';
+
 const mainWrapperElement = document.querySelector('.wrapper');
 const videoCoverElement = document.querySelector('.about__video-cover');
 const videoContainerElement = document.querySelector('.about__video-container');
@@ -28,3 +32,17 @@ tabsContainerElement.addEventListener('click', (evt) => {
     document.getElementById(`${evt.target.id}-subscription`).classList.add('subscription__card-list--active');
   }
 });
+
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
