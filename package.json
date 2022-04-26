@@ -54,8 +54,8 @@
     "webpack-stream": "5.2.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "focus-trap": "^6.7.3",
-    "imask": "^6.4.2",
-    "swiper": "^8.1.4"
+    "imask": "^6.4.2"
   }
 }

@@ -1,6 +1,21 @@
-// import Swiper from 'swiper';
+import Glide from '@glidejs/glide';
 
-// import 'swiper/css';
+// new Glide('.glide').mount();
+
+const glide = new Glide('.glide', {
+  type: 'carousel',
+  perView: 4,
+  gap: 40,
+  breakpoints: {
+    1199: {
+      perView: 2,
+      gap: 30,
+    },
+    767: {perView: 1},
+  },
+});
+
+glide.mount();
 
 const mainWrapperElement = document.querySelector('.wrapper');
 const videoCoverElement = document.querySelector('.about__video-cover');
@@ -32,17 +47,3 @@ tabsContainerElement.addEventListener('click', (evt) => {
     document.getElementById(`${evt.target.id}-subscription`).classList.add('subscription__card-list--active');
   }
 });
-
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });

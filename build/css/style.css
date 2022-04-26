@@ -1311,6 +1311,97 @@ button,
   width: 347px;
 }
 
+.glide {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.glide * {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -ms-touch-action: pan-Y;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.glide__slides--dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glide__slide a {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.glide--rtl {
+  direction: rtl;
+}
+
+.coaches__container {
+  width: 100%;
+}
+
 .coaches__container h2 {
   margin-top: 11px;
   margin-bottom: 65px;
@@ -1321,9 +1412,21 @@ button,
   font-weight: 700;
 }
 
+.coaches__image {
+  margin: 0 auto;
+  z-index: -1;
+}
+
 .coaches__slide {
   position: relative;
-  margin-left: 600px;
+}
+
+.coaches__info-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 294px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,12 +1440,12 @@ button,
   color: #ffffff;
 }
 
-.coaches__slide:hover,
-.coaches__slide:focus {
+.coaches__info-wrapper:hover,
+.coaches__info-wrapper:focus {
   background-color: rgba(16, 38, 84, 0.89);
 }
 
-.coaches__slide strong {
+.coaches__info-wrapper strong {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -1352,17 +1455,17 @@ button,
   font-size: 18px;
 }
 
-.coaches__info-wrapper {
+.coaches__details-block {
   display: none;
   margin-bottom: auto;
 }
 
-.coaches__slide:hover .coaches__info-wrapper,
-.coaches__slide:focus .coaches__info-wrapper {
+.coaches__slide:hover .coaches__details-block,
+.coaches__slide:focus .coaches__details-block {
   display: block;
 }
 
-.coaches__info-wrapper span {
+.coaches__details-block span {
   text-align: center;
   display: block;
   margin-top: -25px;
@@ -1371,8 +1474,10 @@ button,
 
 .coaches__list {
   width: 181px;
+  max-height: 125px;
   margin: 0 auto;
   padding-left: 32px;
+  overflow-y: scroll;
 }
 
 .coaches__item {
@@ -1393,21 +1498,25 @@ button,
   left: -17px;
 }
 
-.coaches__image {
+.coaches__button-left,
+.coaches__button-right {
+  width: 17px;
+  height: 32px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  top: 130px;
 }
 
-.swiper {
-  height: 294px;
-  position: relative;
+.coaches__button-left {
+  left: -57px;
+  background-image: url("../img/svg/left-arrow.svg");
 }
 
-.swiper-slide {
-  width: 260px;
-  height: 294px;
+.coaches__button-right {
+  right: -57px;
+  background-image: url("../img/svg/right-arrow.svg");
 }
 
 .footer {
@@ -1551,6 +1660,55 @@ button,
     padding-top: 1.5vw;
     padding-bottom: 1.4vw;
     width: 25.5vw;
+  }
+
+  .coaches__container {
+    width: 100vw;
+  }
+
+  .coaches__image {
+    width: 18.9vw;
+    height: 21.5vw;
+  }
+
+  .coaches__info-wrapper {
+    width: 18.9vw;
+    height: 21.5vw;
+  }
+
+  .coaches__info-wrapper strong {
+    padding-top: 3.8vw;
+    padding-bottom: 1.8vw;
+    font-size: 1.3vw;
+    padding-left: 0;
+  }
+
+  .coaches__details-block span {
+    margin-top: -2vw;
+    margin-bottom: 2.4vw;
+  }
+
+  .coaches__list {
+    width: 13vw;
+    padding-left: 2.3vw;
+  }
+
+  .coaches__item {
+    font-size: 1.03vw;
+    line-height: 1.55vw;
+    margin-bottom: 0.93vw;
+  }
+
+  .coaches__item::before {
+    width: 0.5vw;
+    height: 0.5vw;
+    top: 0.5vw;
+    left: -1.3vw;
+  }
+
+  .coaches__button-left,
+  .coaches__button-right {
+    top: 9.4vw;
   }
 }
 
@@ -1895,6 +2053,74 @@ button,
     padding-top: 0.9vw;
     padding-bottom: 0.7vw;
     width: 26.6vw;
+  }
+
+  .coaches__container {
+    width: 85.3vw;
+  }
+
+  .coaches__container h2 {
+    margin-top: 84px;
+    margin-bottom: 50px;
+    font-size: 41px;
+    letter-spacing: 1.7px;
+    text-align: center;
+  }
+
+  .coaches__image {
+    width: 34.6vw;
+    height: 38.3vw;
+  }
+
+  .coaches__info-wrapper {
+    width: 34.6vw;
+    height: 38.3vw;
+    left: calc(3.7vw - 27px);
+  }
+
+  .coaches__info-wrapper strong {
+    padding-top: 6.9vw;
+    padding-bottom: 3.2vw;
+    font-size: 2.3vw;
+    padding-left: 11px;
+    padding-right: 0;
+  }
+
+  .coaches__slide:hover .coaches__.coaches__info-wrapper strong,
+  .coaches__slide:focus .coaches__info-wrapper strong {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+  .coaches__details-block span {
+    font-size: 2vw;
+    padding-right: 5px;
+    margin-top: -3.6vw;
+    margin-bottom: 4.6vw;
+  }
+
+  .coaches__list {
+    max-height: 150px;
+    width: 21.3vw;
+    padding-left: 2.5vw;
+  }
+
+  .coaches__item {
+    font-size: 1.83vw;
+    line-height: 2.65vw;
+    margin-bottom: 1.83vw;
+  }
+
+  .coaches__item::before {
+    width: 0.8vw;
+    height: 0.8vw;
+    top: 0.8vw;
+    left: -2vw;
+  }
+
+  .coaches__button-left,
+  .coaches__button-right {
+    top: 16.9vw;
   }
 }
 
