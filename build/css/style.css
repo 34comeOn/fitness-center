@@ -1440,7 +1440,10 @@ button,
   color: #ffffff;
 }
 
-.coaches__info-wrapper:hover,
+.coaches__info-wrapper:hover {
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
 .coaches__info-wrapper:focus {
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -1460,8 +1463,8 @@ button,
   margin-bottom: auto;
 }
 
-.coaches__slide:hover .coaches__details-block,
-.coaches__slide:focus .coaches__details-block {
+.coaches__info-wrapper:hover .coaches__details-block,
+.coaches__info-wrapper:focus .coaches__details-block {
   display: block;
 }
 
@@ -1474,10 +1477,10 @@ button,
 
 .coaches__list {
   width: 181px;
-  max-height: 125px;
+  max-height: 150px;
   margin: 0 auto;
   padding-left: 32px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .coaches__item {
@@ -2083,24 +2086,23 @@ button,
     padding-bottom: 3.2vw;
     font-size: 2.3vw;
     padding-left: 11px;
-    padding-right: 0;
   }
 
-  .coaches__slide:hover .coaches__.coaches__info-wrapper strong,
-  .coaches__slide:focus .coaches__info-wrapper strong {
+  .coaches__info-wrapper:hover strong,
+  .coaches__info-wrapper:focus strong {
     padding-left: 0;
-    padding-right: 8px;
+    padding-right: 9px;
   }
 
   .coaches__details-block span {
     font-size: 2vw;
     padding-right: 5px;
-    margin-top: -3.6vw;
+    margin-top: calc(-2vw - 12px);
     margin-bottom: 4.6vw;
   }
 
   .coaches__list {
-    max-height: 150px;
+    max-height: 280px;
     width: 21.3vw;
     padding-left: 2.5vw;
   }
@@ -2436,5 +2438,78 @@ button,
     width: 63.8vw;
     height: 12.4vw;
     border: 2px solid;
+  }
+
+  .coaches__container {
+    width: 80.3vw;
+  }
+
+  .coaches__container h2 {
+    margin-top: 3px;
+    margin-bottom: 47px;
+    font-size: 31px;
+    letter-spacing: 1.4px;
+  }
+
+  .coaches__image {
+    width: 70.1vw;
+    height: 85.5vw;
+  }
+
+  .coaches__info-wrapper {
+    width: 70.1vw;
+    height: 85.5vw;
+    left: calc(5vw - 15px);
+  }
+
+  .coaches__info-wrapper strong {
+    padding-top: 13.3vw;
+    padding-bottom: 7.2vw;
+    font-size: 5.6vw;
+    padding-left: 0;
+  }
+
+  .coaches__details-block span {
+    font-size: calc(3vw + 5px);
+    padding-right: 0;
+    margin-top: calc(-4vw - 12px);
+    margin-bottom: 10.3vw;
+  }
+
+  .coaches__list {
+    max-height: 380px;
+    width: 53.3vw;
+    padding-left: 7vw;
+  }
+
+  .coaches__item {
+    font-size: 4.33vw;
+    line-height: 6.65vw;
+    margin-bottom: 3.83vw;
+  }
+
+  .coaches__item::before {
+    width: 1.9vw;
+    height: 1.9vw;
+    top: 2.4vw;
+    left: -5vw;
+  }
+
+  .coaches__button-left,
+  .coaches__button-right {
+    top: 37.6vw;
+    width: 11px;
+    height: 27px;
+  }
+
+  .coaches__button-left {
+    left: -33px;
+  }
+
+  .coaches__button-right {
+    right: -33px;
+    width: 8px;
+    height: 22px;
+    background-size: contain;
   }
 }

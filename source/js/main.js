@@ -11,7 +11,10 @@ const glide = new Glide('.glide', {
       perView: 2,
       gap: 30,
     },
-    767: {perView: 1},
+    767: {
+      perView: 1,
+      gap: 0,
+    },
   },
 });
 
