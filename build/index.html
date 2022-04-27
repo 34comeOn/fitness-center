@@ -105,9 +105,10 @@
               <img width="660" height="401" loading="lazy" src="img/gallery/content/about-desktop@1x.jpg" srcset="img/gallery/content/about-desktop@1x.webp 1x, img/gallery/content/about-desktop@2x.webp 2x" alt="Спортивный зал с большим количеством тренажеров">
             </picture>
             <div class="about__video-container" tabindex="0">
-              <iframe class="about__video" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-              <div class="about__video-cover">
+              <video class="about__video" controls>
+                <source src="img/video-academy.mp4" type="video/mp4">
+              </video>
+              <div class="about__video-cover visually-hidden">
               </div>
             </div>
           </div>
@@ -383,7 +384,7 @@
               <span>
                 Ежегодные соревнования по CrossFit
               </span>
-              <a class="button" href="#" alt="перейти по ссылке, чтобы принять участие в событии и">
+              <a class="button" href="#">
                 заполнить заявку
               </a>
             </div>
@@ -611,7 +612,137 @@
             <h2>
               Наши преимущества
             </h2>
+            <ul class="advantages__list list">
+              <li class="advantages__item advantages__item--basic advantages__item--square">
+                <strong>
+                  900
+                  <span>
+                    кв/м
+                  </span>
+                </strong>
+                <div class="advantages__details-wrapper">
+                  <h3>
+                    Площадь
+                  </h3>
+                  <p>
+                    Занимайтесь без очередей и толкучки
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--basic advantages__item--parking">
+                <strong>
+                  70
+                  <span>
+                    машин
+                  </span>
+                </strong>
+                <div class="advantages__details-wrapper">
+                  <h3>
+                    Собственная парковка
+                  </h3>
+                  <p>
+                    Вы всегда найдете место для своей машины на нашей парковке
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--main">
+                <strong>
+                  100
+                </strong>
+                <h3>
+                  Тренажеров
+                </h3>
+                <p>
+                  Современные тренажеры на все группы мышц
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--basic advantages__item--comfort">
+                <strong>
+                  350
+                  <span>
+                    мест
+                  </span>
+                </strong>
+                <div class="advantages__details-wrapper">
+                  <h3>
+                    Комфорт
+                  </h3>
+                  <p>
+                    Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--basic advantages__item--experience">
+                <strong>
+                  5+
+                  <span>
+                    лет
+                  </span>
+                </strong>
+                <div class="advantages__details-wrapper">
+                  <h3>
+                    Тренерский опыт
+                  </h3>
+                  <p>
+                    Добивайтесь своих целей быстрее с профессиональным тренером
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <section class="offers">
+          <h2 class="visually-hidden">
+            Акции Supergym
+          </h2>
+          <div class="offers__container container">
+            <h2>
+              Акции
+            </h2>
+            <div class="offers__frame">
+              <div class="offers__main">
+                <div class="offers__details-main">
+                  <h3>
+                    Год
+                  </h3>
+                  <strong>
+                    4999
+                  </strong>
+                  <p>
+                    Безлимитный абонемент в тренажерный зал
+                  </p>
+                  <a href="#">
+                    подробнее
+                  </a>
+                </div>
+                <img width="280" height="462" src="img/gallery/content/offer-main@1x.jpg" srcset="img/gallery/content/offer-main@1x.webp 1x, img/gallery/content/offer-main@2x.webp 2x" alt="Спортивная девушка на фоне голубого неба">
+              </div>
+              <ul class="offers__list list">
+                <li class="offers__item">
+                  <h3>
+                    Месяц бесплатно
+                  </h3>
+                  <span>
+                    Приведи друга, получи абонемент в подарок
+                  </span>
+                  <a href="#">
+                    подробнее
+                  </a>
+                </li>
+                <li class="offers__item">
+                  <h3>
+                    Скидка 20%
+                  </h3>
+                  <span>
+                    Корпоративный фитнес с командой
+                  </span>
+                  <a href="#">
+                    подробнее
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 

@@ -140,6 +140,7 @@
     height: 45.1vw;
     object-fit: cover;
   }
+
   @include vp-767 {
     min-height: 313px;
     height: auto;

@@ -63,6 +63,15 @@
 
 .coaches__slide {
   position: relative;
+  margin-bottom: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 70px;
+  }
 }
 
 .coaches__info-wrapper {
