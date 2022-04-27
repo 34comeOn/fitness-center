@@ -1,0 +1,116 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+.feedback__container {
+  width: 100%;
+
+  @include vp-1365 {
+    width: 100vw;
+  }
+
+  @include vp-1199 {
+    width: 85.3vw;
+  }
+
+  @include vp-767 {
+    width: 80.3vw;
+  }
+}
+
+.feedback__container h2 {
+  font-size: 52.5px;
+  font-family: $ff-placeholder-decorative-bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 65px;
+  margin-top: 10px;
+
+  @include vp-1199 {
+    // font-size: 52.5px;
+    // margin-bottom: 83px;
+    // margin-top: 11px;
+  }
+}
+
+.feedback__image {
+  margin: 0 auto;
+  z-index: -1;
+
+  @include vp-1365 {
+    width: 18.9vw;
+    height: 21.5vw;
+  }
+
+  @include vp-1199 {
+    width: 34.6vw;
+    height: 38.3vw;
+  }
+
+  @include vp-767 {
+    width: 70.1vw;
+    height: 85.5vw;
+  }
+}
+
+.feedback__slide {
+  position: relative;
+  margin-bottom: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 70px;
+  }
+}
+
+.feedback__button-wrapper {
+  position: relative;
+}
+
+.feedback__button-left,
+.feedback__button-right {
+  width: 17px;
+  height: 32px;
+  border: none;
+  background-color: $color-transparent;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 130px;
+
+  @include vp-1365 {
+    top: 9.4vw;
+  }
+
+  @include vp-1199 {
+    top: 16.9vw;
+  }
+
+  @include vp-767 {
+    top: 37.6vw;
+    width: 11px;
+    height: 27px;
+  }
+}
+
+.feedback__button-left {
+  left: -57px;
+  background-image: url("../img/svg/left-arrow.svg");
+
+  @include vp-767 {
+    left: -33px;
+  }
+}
+
+.feedback__button-right {
+  right: -57px;
+  background-image: url("../img/svg/right-arrow.svg");
+
+  @include vp-767 {
+    right: -33px;
+    width: 8px;
+    height: 22px;
+    background-size: contain;
+  }
+}

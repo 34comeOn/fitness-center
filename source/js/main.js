@@ -49,3 +49,21 @@ const glide = new Glide('.glide', {
 });
 
 glide.mount();
+
+const feedback = new Glide('.glide-feedback', {
+  type: 'slider',
+  perView: 2,
+  // gap: 40,
+  // breakpoints: {
+  //   1199: {
+  //     perView: 2,
+  //     gap: 30,
+  //   },
+  //   767: {
+  //     perView: 1,
+  //     gap: 0,
+  //   },
+  // },
+});
+
+feedback.mount();
