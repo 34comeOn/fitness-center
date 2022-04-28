@@ -1,14 +1,10 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 .feedback__container {
-  width: 100%;
-
-  @include vp-1365 {
-    width: 100vw;
-  }
+  width: 768px;
 
   @include vp-1199 {
-    width: 85.3vw;
+    width: 656px;
   }
 
   @include vp-767 {
@@ -26,42 +22,95 @@
   margin-top: 10px;
 
   @include vp-1199 {
-    // font-size: 52.5px;
-    // margin-bottom: 83px;
-    // margin-top: 11px;
-  }
-}
-
-.feedback__image {
-  margin: 0 auto;
-  z-index: -1;
-
-  @include vp-1365 {
-    width: 18.9vw;
-    height: 21.5vw;
-  }
-
-  @include vp-1199 {
-    width: 34.6vw;
-    height: 38.3vw;
+    font-size: 43.3px;
+    margin-bottom: 49px;
+    margin-top: 8px;
+    letter-spacing: 0.8px;
   }
 
   @include vp-767 {
-    width: 70.1vw;
-    height: 85.5vw;
+    font-size: 32.7px;
+    margin-bottom: 47.2px;
+    margin-top: 3.2px;
   }
 }
 
 .feedback__slide {
   position: relative;
   margin-bottom: 120px;
+  background-color: $color-advantages-main;
+  color: $color-default-white;
+  height: 242px;
+  padding: 62px 65px;
+  display: grid;
+  grid-template-columns: 80px 486px;
+  grid-template-rows: min-content min-content;
 
   @include vp-1199 {
     margin-bottom: 100px;
   }
 
   @include vp-767 {
+    grid-template-columns: 50% 50%;
+    padding: 40px 25px;
     margin-bottom: 70px;
+    height: 335px;
+  }
+}
+
+.feedback__slide img {
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  @include vp-767 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 68px;
+    height: 68px;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}
+
+.feedback__slide b {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $ff-placeholder-main-bold;
+  font-weight: 700;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: 28px;
+  margin-top: -8px;
+
+  @include vp-767 {
+    padding-left: 11px;
+    margin-top: 7px;
+    line-height: 26px;
+    overflow: auto;
+  }
+}
+
+.feedback__slide p {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-family: $ff-placeholder-main-regular;
+  font-weight: 400;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 356px;
+  padding-left: 28px;
+  margin-top: 13px;
+  overflow-y: auto;
+  max-height: 90px;
+
+  @include vp-767 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    max-height: 60vw;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -77,18 +126,15 @@
   background-color: $color-transparent;
   background-repeat: no-repeat;
   position: absolute;
-  top: 130px;
-
-  @include vp-1365 {
-    top: 9.4vw;
-  }
+  top: -258px;
 
   @include vp-1199 {
-    top: 16.9vw;
+    top: -238px;
   }
 
   @include vp-767 {
-    top: 37.6vw;
+    background-size: contain;
+    top: calc(4vw - 263px);
     width: 11px;
     height: 27px;
   }
@@ -109,8 +155,5 @@
 
   @include vp-767 {
     right: -33px;
-    width: 8px;
-    height: 22px;
-    background-size: contain;
   }
 }

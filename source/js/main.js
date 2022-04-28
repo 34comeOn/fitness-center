@@ -52,7 +52,7 @@ glide.mount();
 
 const feedback = new Glide('.glide-feedback', {
   type: 'slider',
-  perView: 2,
+  perView: 1,
   // gap: 40,
   // breakpoints: {
   //   1199: {

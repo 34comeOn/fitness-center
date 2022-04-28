@@ -1,0 +1,119 @@
+.trial {
+  background-color: $color-text-dark;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 337px;
+
+  @include vp-1199 {
+    align-items: center;
+  }
+}
+
+.trial h2 {
+  font-size: 48.5px;
+  font-family: $ff-placeholder-decorative-bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+  margin-top: 81px;
+  margin-right: 214.2px;
+  letter-spacing: 1.6px;
+
+  @include vp-1199 {
+    font-size: 43.3px;
+    margin-bottom: 44px;
+    margin-top: 78px;
+    margin-right: 189.2px;
+    letter-spacing: 0.8px;
+  }
+
+  @include vp-767 {
+    font-size: 32.7px;
+    margin-bottom: 44.2px;
+    margin-top: 2.2px;
+  }
+}
+
+.trial__form {
+  margin: 0;
+  padding: 0;
+}
+
+.trial__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 170px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 190px;
+    background-color: $color-form-border;
+    top: 26px;
+    left: 246px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 190px;
+    background-color: $color-form-border;
+    top: 26px;
+    left: 25px;
+  }
+
+  @include vp-1199 {
+    margin-right: 30px;
+  }
+}
+
+.trial input {
+  width: 193px;
+  margin-left: 23px;
+  background-color: $color-transparent;
+  color: $color-default-white;
+  border: none;
+  font-size: 14.5px;
+  line-height: 16px;
+  padding-bottom: 8px;
+// PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADING LEFT malen`kii
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    margin-left: 0;
+    width: 217px;
+  }
+}
+
+.trial__name-input {
+  @include vp-1199 {
+    margin-right: 40px;
+  }
+}
+
+.trial button {
+  margin: 27px 0 0 24px;
+  width: 412px;
+  background-color: $color-transparent;
+  color: $color-default-white;
+  border: 3px solid $color-default-white;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  font-family: $ff-placeholder-main-bold;
+  font-weight: 700;
+  height: 56px;
+
+  @include vp-1199 {
+    margin: 27px 0 0 0;
+    width: 475px;
+  }
+}

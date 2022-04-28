@@ -3,10 +3,12 @@
 
   @include vp-1199 {
     padding: 100px 45px;
+    padding-bottom: 58px;
   }
 
   @include vp-767 {
     padding: 70px 15px;
+    padding-bottom: 40px;
   }
 }
 
@@ -20,9 +22,16 @@
   margin-top: 10px;
 
   @include vp-1199 {
-    // font-size: 52.5px;
-    // margin-bottom: 83px;
-    // margin-top: 11px;
+    font-size: 43.3px;
+    margin-bottom: 50px;
+    margin-top: 7px;
+    letter-spacing: 0.8px;
+  }
+
+  @include vp-767 {
+    font-size: 32.7px;
+    margin-bottom: 47.2px;
+    margin-top: 3.2px;
   }
 }
 
@@ -32,10 +41,27 @@
   column-gap: 3.44%;
   grid-template-columns: 48.28% 48.28%;
   grid-template-rows: 462px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .offers__main {
   display: flex;
+
+  @include vp-1199 {
+    margin-bottom: 4vw;
+    height: 60.1vw;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 8.5vw;
+    min-height: 600px;
+    height: min-content;
+  }
 }
 
 .offers__details-main {
@@ -46,33 +72,133 @@
 
   display: flex;
   flex-direction: column;
+  width: 50%;
+
+  @include vp-1199 {
+    width: 41.2%;
+  }
+
+  @include vp-767 {
+    padding: 14vw;
+    width: 100%;
+    align-items: center;
+    min-height: 299px;
+    height: 93.3vw;
+  }
 }
 
 .offers__details-main h3 {
   font-size: 27px;
   margin-top: -3px;
+
+  @include vp-1199 {
+    font-size: 3.7vw;
+    margin-top: -0.2vw;
+    line-height: 3.2vw;
+  }
+
+  @include vp-767 {
+    font-size: 8.7vw;
+    margin-top: -0.3vw;
+    line-height: 7.4vw;
+  }
 }
 
 .offers__details-main strong {
   font-size: 72px;
   display: block;
   margin-bottom: 27px;
+
+  @include vp-1199 {
+    font-size: 9.3vw;
+    margin-bottom: 3vw;
+  }
+
+  @include vp-767 {
+    font-size: 21vw;
+    letter-spacing: 0.7vw;
+    margin-bottom: 5.8vw;
+  }
 }
 
 .offers__details-main p {
   font-size: 18px;
+
+  @include vp-1199 {
+    font-size: 2.34vw;
+  }
+
+  @include vp-767 {
+    font-size: 5.6vw;
+    text-align: center;
+    line-height: 7.3vw;
+  }
 }
 
 .offers__details-main a {
   margin-top: auto;
-  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: max-content;
+  position: relative;
   color: $color-default-white;
-  font-size: 17.5px;
+
+  &::after {
+    width: stretch;
+    position: absolute;
+    content: "";
+    height: 0.5px;
+    top: 22px;
+    background-color: $color-default-white;
+    left: 0;
+  }
+
+  @include vp-1199 {
+    font-size: 2vw;
+    line-height: 2.1vw;
+
+    &::after {
+      top: 2.1vw;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 4.8vw;
+    line-height: 5.2vw;
+
+    &::after {
+      top: 4.7vw;
+    }
+  }
 }
 
 .offers__main img {
   object-fit: cover;
   object-position: 36%;
+  width: 50%;
+
+  @include vp-1199 {
+    width: 59%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 93.3vw;
+    object-position: 1% 18%;
+  }
+}
+
+.offers__list {
+  @include vp-1199 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .offers__item {
@@ -89,12 +215,61 @@
 
   display: flex;
   flex-direction: column;
+
+  @include vp-1199 {
+    width: 47.8%;
+    min-height: 27.5vw;
+    padding: 4.1vw 3.6vw 3.3vw;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 211px;
+    padding: 4.1vw 3.6vw calc(5.9vw + 17.3px);
+    margin-bottom: 9.5vw;
+    align-items: center;
+  }
 }
 
 .offers__item h3 {
   font-size: 26px;
   margin-top: -8px;
   margin-bottom: 12px;
+
+  @include vp-1199 {
+    font-size: 3.4vw;
+    margin-top: -0.7vw;
+    margin-bottom: 1.5vw;
+  }
+
+  @include vp-767 {
+    font-size: calc(5.9vw + 7.3px);
+    margin-top: calc(2vw + 17.3px);
+    margin-bottom: 4.6vw;
+  }
+}
+
+.offers__item br {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.offers__item span {
+  @include vp-1199 {
+    font-size: 2.1vw;
+    line-height: 2.9vw;
+  }
+
+  @include vp-767 {
+    font-size: calc(1vw + 13px);
+    line-height: calc(1vw + 17px);
+    text-align: center;
+    width: 51vw;
+    padding-bottom: 5vw;
+  }
 }
 
 .offers__item a {
@@ -113,5 +288,21 @@
     top: 22px;
     background-color: $color-advantages-main;
     left: 0;
+  }
+
+  @include vp-1199 {
+    font-size: 1.7vw;
+
+    &::after {
+      top: 2.6vw;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 4.1vw;
+
+    &::after {
+      top: 6.3vw;
+    }
   }
 }
