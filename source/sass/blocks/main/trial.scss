@@ -8,6 +8,13 @@
 
   @include vp-1199 {
     align-items: center;
+    min-height: 325px;
+  }
+
+  @include vp-767 {
+    min-height: 386px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -31,14 +38,19 @@
 
   @include vp-767 {
     font-size: 32.7px;
-    margin-bottom: 44.2px;
-    margin-top: 2.2px;
+    margin-bottom: 40.2px;
+    margin-top: 72.2px;
+    margin-right: auto;
   }
 }
 
 .trial__form {
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .trial__fieldset {
@@ -55,7 +67,7 @@
     width: 190px;
     background-color: $color-form-border;
     top: 26px;
-    left: 246px;
+    left: 247px;
   }
 
   &::before {
@@ -65,11 +77,42 @@
     width: 190px;
     background-color: $color-form-border;
     top: 26px;
-    left: 25px;
+    left: 28px;
   }
 
   @include vp-1199 {
     margin-right: 30px;
+
+    &::after {
+      width: 205px;
+      top: 26px;
+      left: 269px;
+    }
+
+    &::before {
+      width: 205px;
+      top: 26px;
+      left: 3px;
+    }
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+
+    display: block;
+    width: 100%;
+
+    &::after {
+      width: 100%;
+      top: 86px;
+      left: 0;
+    }
+
+    &::before {
+      width: 100%;
+      top: 26px;
+      left: 0;
+    }
   }
 }
 
@@ -82,20 +125,31 @@
   font-size: 14.5px;
   line-height: 16px;
   padding-bottom: 8px;
-// PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADING LEFT malen`kii
+  padding-left: 3px;
+
   &::placeholder {
     color: $color-default-white;
   }
 
   @include vp-1199 {
     margin-left: 0;
-    width: 217px;
+    width: 214px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 32px;
   }
 }
 
 .trial__name-input {
   @include vp-1199 {
-    margin-right: 40px;
+    margin-right: 44px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }
 
@@ -115,5 +169,11 @@
   @include vp-1199 {
     margin: 27px 0 0 0;
     width: 475px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
   }
 }
