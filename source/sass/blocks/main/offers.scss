@@ -142,6 +142,7 @@
   width: max-content;
   position: relative;
   color: $color-default-white;
+  user-select: none;
 
   &::after {
     width: stretch;
@@ -169,6 +170,20 @@
     &::after {
       top: 4.7vw;
     }
+  }
+
+  &:hover {
+    color: $color-advantages-main;
+
+    &::after {
+      background-color: $color-advantages-main;
+      height: 2px;
+    }
+  }
+
+  &:focus {
+    background-color: $color-advantages-main;
+    color: $color-default-white;
   }
 }
 
@@ -279,6 +294,7 @@
   width: max-content;
   position: relative;
   color: $color-advantages-main;
+  user-select: none;
 
   &::after {
     width: stretch;
@@ -304,5 +320,19 @@
     &::after {
       top: 6.3vw;
     }
+  }
+
+  &:hover {
+    color: $color-gradient-border-red;
+
+    &::after {
+      background-color: $color-gradient-border-red;
+      height: 2px;
+    }
+  }
+
+  &:focus {
+    background-color: $color-advantages-main;
+    color: $color-default-white;
   }
 }

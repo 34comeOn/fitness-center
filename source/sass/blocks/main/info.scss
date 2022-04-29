@@ -63,6 +63,7 @@
     margin-left: 134px;
     row-gap: 22px;
     column-gap: 90px;
+    margin-bottom: 66px;
 
     &::before {
       height: 129px;
@@ -73,6 +74,7 @@
 
   @include vp-767 {
     margin-left: 0;
+    margin-bottom: 62px;
 
     display: flex;
     flex-direction: column;
@@ -142,9 +144,28 @@
   font-size: 15px;
   letter-spacing: -0.4px;
   color: $color-text-dark;
+  width: max-content;
+  position: relative;
+  user-select: none;
 
   @include vp-1199 {
     font-size: 17px;
     letter-spacing: 0.4px;
+  }
+
+  &:focus {
+    color: $color-gradient-border-red;
+  }
+
+  &:hover {
+    &::after {
+      width: stretch;
+      position: absolute;
+      content: "";
+      height: 0.5px;
+      top: 22px;
+      background-color: $color-advantages-main;
+      left: 0;
+    }
   }
 }

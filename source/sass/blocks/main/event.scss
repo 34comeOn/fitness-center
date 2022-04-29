@@ -322,6 +322,7 @@
   padding-top: 20px;
   padding-bottom: 19px;
   width: 347px;
+  user-select: none;
 
   @include vp-1365 {
     margin: 3.4vw auto 0 -0.11vw;
@@ -347,5 +348,15 @@
     width: 63.8vw;
     height: 12.4vw;
     border: 2px solid;
+  }
+
+  &:hover {
+    color: $color-advantages-main;
+    border: 3px solid $color-advantages-main;
+  }
+
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-background-darkblue;
   }
 }

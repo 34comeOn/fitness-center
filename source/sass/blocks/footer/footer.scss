@@ -9,6 +9,20 @@
   grid-template-columns: 15% 60% 15%;
   grid-template-rows: min-content;
   column-gap: 5%;
+
+  @include vp-1199 {
+    column-gap: 0;
+    grid-template-columns: 19% 62% 19%;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 36px;
+  }
 }
 
 .footer__link-logo {
@@ -16,12 +30,40 @@
   min-height: 108px;
   display: flex;
   align-items: center;
+  pointer-events: none;
+
+  @include vp-1199 {
+    min-height: 114px;
+    width: 82px;
+    height: 18px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    min-height: min-content;
+    top: 50px;
+    left: 15px;
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.footer__logo {
+  user-select: none;
+
+  @include vp-1199 {
+    min-height: 114px;
+  }
 }
 
 .footer__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include vp-767 {
+    margin-bottom: 3px;
+  }
 }
 
 .footer__navigation-list {
@@ -30,10 +72,53 @@
   justify-content: space-between;
   width: max-content;
   align-items: center;
+
+  @include vp-767 {
+    width: 100%;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content;
+    grid-template-areas: ". offers"
+                         "services coaches"
+                         "subscription schedule";
+  }
+}
+
+.footer__navigation-item--services {
+  grid-area: services;
+}
+
+.footer__navigation-item--subscription {
+  grid-area: subscription;
+}
+
+.footer__navigation-item--offers {
+  grid-area: offers;
+}
+
+.footer__navigation-item--coaches {
+  grid-area: coaches;
+}
+
+.footer__navigation-item--schedule {
+  grid-area: schedule;
 }
 
 .footer__navigation-item {
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @include vp-1199 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__navigation a {
@@ -41,6 +126,20 @@
   line-height: 16px;
   font-family: $ff-placeholder-main-regular;
   color: $color-default-white;
+  user-select: none;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    color: $color-gradient-border-red;
+  }
+
+  &:focus {
+    color: $color-basic-blue;
+  }
 }
 
 .footer__sochials-list {
@@ -49,14 +148,41 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  margin-right: -6px;
+
+  @include vp-767 {
+    margin-right: 0;
+    justify-content: flex-start;
+  }
 }
 
 .footer__sochials-item {
   display: flex;
   align-items: center;
-  margin-left: 25px;
+  margin-left: 23px;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @include vp-1199 {
+    margin-left: 19px;
+  }
+
+  @include vp-767 {
+    margin-right: 33px;
+    margin-left: 0;
+  }
+}
+
+.footer__sochials-item--fb {
+  margin-left: 14px;
+
+  @include vp-1199 {
+    margin-left: 10px;
+  }
+
+  @include vp-767 {
+    margin-left: -9px;
+  }
 }
 
 .footer__sochials-link {
@@ -64,4 +190,45 @@
   height: 26px;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @include vp-767 {
+    width: 32px;
+  }
+}
+
+.footer__sochials-pic {
+  user-select: none;
+
+  &:hover {
+    fill: $color-gradient-border-red;
+  }
+}
+
+.footer__sochials-link:focus .footer__sochials-pic {
+  fill: $color-advantages-main;
+}
+
+.footer__sochials-vk {
+  margin-top: -3px;
+
+  @include vp-767 {
+    width: 32px;
+    height: 17px;
+    margin-top: 0;
+  }
+}
+
+.footer__sochials-ig {
+  @include vp-767 {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.footer__sochials-fb {
+  @include vp-767 {
+    width: 14px;
+    height: 27px;
+  }
 }

@@ -80,11 +80,13 @@
   font-weight: 700;
   grid-column: 2/3;
   grid-row: 1/2;
-  padding-left: 28px;
+  margin-left: 28px;
   margin-top: -8px;
+  width: max-content;
+  display: block;
 
   @include vp-767 {
-    padding-left: 11px;
+    margin-left: 11px;
     margin-top: 7px;
     line-height: 26px;
     overflow: auto;
@@ -99,7 +101,7 @@
   grid-column: 2/3;
   grid-row: 2/3;
   width: 356px;
-  padding-left: 28px;
+  margin-left: 28px;
   margin-top: 13px;
   overflow-y: auto;
   max-height: 90px;
@@ -127,6 +129,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: -258px;
+  user-select: none;
 
   @include vp-1199 {
     top: -238px;
@@ -137,6 +140,15 @@
     top: calc(4vw - 263px);
     width: 11px;
     height: 27px;
+  }
+
+  &:hover {
+    outline: 3px solid $color-gradient-border-red;
+    outline-offset: 5px;
+  }
+
+  &:focus {
+    background-color: $color-advantages-main;
   }
 }
 

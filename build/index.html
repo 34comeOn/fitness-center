@@ -104,11 +104,11 @@
             <picture class="about__img-container">
               <img width="660" height="401" loading="lazy" src="img/gallery/content/about-desktop@1x.jpg" srcset="img/gallery/content/about-desktop@1x.webp 1x, img/gallery/content/about-desktop@2x.webp 2x" alt="Спортивный зал с большим количеством тренажеров">
             </picture>
-            <div class="about__video-container" tabindex="0">
+            <div class="about__video-container" >
               <video class="about__video" controls>
                 <source src="img/video-academy.mp4" type="video/mp4">
               </video>
-              <div class="about__video-cover visually-hidden">
+              <div class="about__video-cover visually-hidden" tabindex="0">
               </div>
             </div>
           </div>
@@ -856,7 +856,7 @@
         </section>
 
       </main>
-<!-- aria-label у ссылок можно делать??? Валидатор -->
+
       <footer class="footer">
         <div class="container footer__container">
           <a class="footer__link-logo" href="#">
@@ -868,27 +868,27 @@
 
           <nav class="footer__navigation">
             <ul class="footer__navigation-list list">
-              <li class="footer__navigation-item">
+              <li class="footer__navigation-item footer__navigation-item--services">
                 <a href="#" aria-label="перейти в раздел">
                   Услуги
                 </a>
               </li>
-              <li class="footer__navigation-item">
+              <li class="footer__navigation-item footer__navigation-item--subscription">
                 <a href="#" aria-label="перейти в раздел">
                   Абонементы
                 </a>
               </li>
-              <li class="footer__navigation-item">
+              <li class="footer__navigation-item footer__navigation-item--offers">
                 <a href="#" aria-label="перейти в раздел">
                   Акции
                 </a>
               </li>
-              <li class="footer__navigation-item">
+              <li class="footer__navigation-item footer__navigation-item--coaches">
                 <a href="#" aria-label="перейти в раздел">
                   Тренеры
                 </a>
               </li>
-              <li class="footer__navigation-item">
+              <li class="footer__navigation-item footer__navigation-item--schedule">
                 <a href="#" aria-label="перейти в раздел">
                   Расписание
                 </a>
@@ -913,7 +913,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__sochials-item">
+            <li class="footer__sochials-item footer__sochials-item--fb">
               <a class="footer__sochials-link" href="#" aria-label="перейти в социальную сеть">
                 <svg class="footer__sochials-pic footer__sochials-fb" width="12" height="24" fill="#ffffff">
                   <use xlink:href="img/sprite/sprite.svg#fb">

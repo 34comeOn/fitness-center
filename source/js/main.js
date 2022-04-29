@@ -8,9 +8,11 @@ const tabsListElement = document.querySelector('.subscription__tab-list');
 const videoElement = document.querySelector('.about__video');
 
 videoCoverElement.classList.remove('visually-hidden');
+videoElement.removeAttribute('controls');
 
 function playVideo(media) {
   media.play();
+  media.setAttribute('controls', 'controls');
 }
 
 mainWrapperElement.classList.remove('wrapper--nojs');
@@ -53,17 +55,6 @@ glide.mount();
 const feedback = new Glide('.glide-feedback', {
   type: 'slider',
   perView: 1,
-  // gap: 40,
-  // breakpoints: {
-  //   1199: {
-  //     perView: 2,
-  //     gap: 30,
-  //   },
-  //   767: {
-  //     perView: 1,
-  //     gap: 0,
-  //   },
-  // },
 });
 
 feedback.mount();

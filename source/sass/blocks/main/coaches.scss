@@ -85,6 +85,7 @@
   flex-direction: column;
   justify-content: flex-end;
   color: $color-default-white;
+  user-select: none;
 
   &:hover {
     background-color: $color-background-darkblue;
@@ -146,6 +147,8 @@
 
 .coaches__info-wrapper:hover strong,
 .coaches__info-wrapper:focus strong {
+  user-select: none;
+
   @include vp-1199 {
     padding-left: 0;
     padding-right: 9px;
@@ -155,6 +158,7 @@
 .coaches__details-block {
   display: none;
   margin-bottom: auto;
+  user-select: none;
 }
 
 .coaches__info-wrapper:hover .coaches__details-block,
@@ -277,6 +281,7 @@
   border: none;
   background-color: $color-transparent;
   background-repeat: no-repeat;
+  user-select: none;
 
   position: absolute;
   top: 130px;
@@ -294,6 +299,15 @@
     width: 11px;
     height: 27px;
     background-size: contain;
+  }
+
+  &:hover {
+    outline: 3px solid $color-gradient-border-red;
+    outline-offset: 5px;
+  }
+
+  &:focus {
+    background-color: $color-advantages-main;
   }
 }
 

@@ -188,6 +188,7 @@
   width: 365px;
   height: 228px;
   z-index: 2;
+  user-select: none;
 
   &::before {
     content: "";
