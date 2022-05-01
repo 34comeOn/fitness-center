@@ -952,14 +952,15 @@ button,
 .subscription__container::after {
   content: "";
   position: absolute;
-  bottom: -121px;
-  right: -158px;
+  bottom: -128px;
+  right: -183px;
   background-image: url("../img/gallery/background/barbells@1x.png");
-  width: 419px;
-  height: 432px;
+  width: 470px;
+  height: 449px;
   z-index: 1;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .subscription__container h2 {
@@ -1151,6 +1152,7 @@ button,
   position: relative;
   left: -22px;
   z-index: 1;
+  display: ruby-base;
 }
 
 .subscription__card strong::after {
@@ -1975,7 +1977,7 @@ button,
   width: stretch;
   position: absolute;
   content: "";
-  height: 0.5px;
+  height: 1px;
   top: 22px;
   background-color: #ffffff;
   left: 0;
@@ -2056,7 +2058,7 @@ button,
   width: stretch;
   position: absolute;
   content: "";
-  height: 0.5px;
+  height: 1px;
   top: 22px;
   background-color: #1c3374;
   left: 0;
@@ -2628,7 +2630,7 @@ button,
   width: stretch;
   position: absolute;
   content: "";
-  height: 0.5px;
+  height: 1px;
   top: 22px;
   background-color: #1c3374;
   left: 0;
@@ -3737,7 +3739,7 @@ button,
   }
 
   .info__list {
-    margin-left: 134px;
+    margin-left: auto;
     row-gap: 22px;
     -webkit-column-gap: 90px;
     -moz-column-gap: 90px;
@@ -4242,6 +4244,10 @@ button,
     min-height: 74.6vw;
   }
 
+  .advantages__item--comfort {
+    margin-top: 8.5vw;
+  }
+
   .advantages__item--experience {
     margin-top: -0.7vw;
   }
@@ -4249,11 +4255,6 @@ button,
   .advantages__item--square,
   .advantages__item--parking {
     margin-top: 0;
-  }
-
-  .advantages__item--comfort,
-  .advantages__item--experience {
-    margin-top: 8.5vw;
   }
 
   .advantages__item--basic h3 {
@@ -4489,7 +4490,9 @@ button,
     margin-left: 11px;
     margin-top: 7px;
     line-height: 26px;
+    max-width: 70px;
     overflow: auto;
+    min-height: 63px;
   }
 
   .feedback__slide p {
@@ -4589,6 +4592,7 @@ button,
   .info__list {
     margin-left: 0;
     margin-bottom: 62px;
+    padding-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4649,10 +4653,10 @@ button,
     width: 275px;
     display: -ms-grid;
     display: grid;
-    -webkit-column-gap: 15px;
-    -moz-column-gap: 15px;
-    column-gap: 15px;
-    -ms-grid-columns: 50% 15px 50%;
+    -webkit-column-gap: 21px;
+    -moz-column-gap: 21px;
+    column-gap: 21px;
+    -ms-grid-columns: 50% 21px 50%;
     grid-template-columns: 50% 50%;
     -ms-grid-rows: -webkit-min-content;
     -ms-grid-rows: min-content;

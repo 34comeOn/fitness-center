@@ -8,14 +8,15 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -121px;
-    right: -158px;
+    bottom: -128px;
+    right: -183px;
     background-image: url("../img/gallery/background/barbells@1x.png");
-    width: 419px;
-    height: 432px;
+    width: 470px;
+    height: 449px;
     z-index: 1;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   @include vp-1365 {
@@ -325,7 +326,7 @@
   position: relative;
   left: -22px;
   z-index: 1;
-
+  display: ruby-base;
 
   &::after {
     content: attr(data-parent);
