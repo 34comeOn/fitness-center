@@ -63,6 +63,7 @@
 
   @include vp-767 {
     margin-bottom: 3px;
+    justify-content: flex-start;
   }
 }
 
@@ -74,14 +75,12 @@
   align-items: center;
 
   @include vp-767 {
-    width: 100%;
+    width: 275px;
     display: grid;
     column-gap: 15px;
     grid-template-columns: 50% 50%;
     grid-template-rows: min-content;
-    grid-template-areas: ". offers"
-                         "services coaches"
-                         "subscription schedule";
+    grid-template-areas: ". offers" "services coaches" "subscription schedule";
   }
 }
 

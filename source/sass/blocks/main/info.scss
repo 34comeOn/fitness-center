@@ -25,7 +25,8 @@
     font-size: 41.5px;
     margin-bottom: 46px;
     margin-top: 79px;
-    margin-left: 132px;
+    margin-left: -351px;
+    text-align: center;
   }
 
   @include vp-767 {
@@ -53,7 +54,7 @@
     position: absolute;
     content: "";
     width: 1px;
-    height: 102px;
+    height: stretch;
     background-color: $color-form-border;
     top: 5px;
     left: 229px;
@@ -64,11 +65,13 @@
     row-gap: 22px;
     column-gap: 90px;
     margin-bottom: 66px;
+    width: max-content;
+    margin-right: auto;
+    padding-left: 34px;
 
     &::before {
-      height: 129px;
       top: 3px;
-      left: 265px;
+      left: 300px;
     }
   }
 

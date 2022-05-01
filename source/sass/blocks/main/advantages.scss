@@ -144,6 +144,10 @@
     grid-column: 2/3;
     grid-row: 3/4;
   }
+
+  @include vp-767 {
+    margin-top: -0.7vw;
+  }
 }
 
 .advantages__item--square,
@@ -189,12 +193,6 @@
 
   @include vp-767 {
     margin-top: 8.5vw;
-  }
-}
-
-.advantages__item--experience {
-  @include vp-767 {
-    margin-top: -0.7vw;
   }
 }
 

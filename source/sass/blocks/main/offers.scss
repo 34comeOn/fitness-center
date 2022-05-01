@@ -50,6 +50,7 @@
 
 .offers__main {
   display: flex;
+  background-color: $color-basic-blue;
 
   @include vp-1199 {
     margin-bottom: 4vw;

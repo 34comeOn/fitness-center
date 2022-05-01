@@ -6,23 +6,45 @@ const videoContainerElement = document.querySelector('.about__video-container');
 const tabsContainerElement = document.querySelector('.subscription__button-list');
 const tabsListElement = document.querySelector('.subscription__tab-list');
 const videoElement = document.querySelector('.about__video');
+const leftArrowElement = document.querySelector('.feedback__button-left');
+const rightArrowElement = document.querySelector('.feedback__button-right');
+const nameInputElement = document.querySelector('input[name="name"]');
+const phoneInputElement = document.querySelector('input[name="phone"]');
+const submitButtonElement = document.querySelector('.form__button');
 
+const nameInputRe = /[A-Za-zA-Яа-яЁё0-9\s]$/;
+const phoneInputRe = /[0-9]$/;
+
+const collectionOfComments = document.querySelectorAll('.feedback__slide');
+
+mainWrapperElement.classList.remove('wrapper--nojs');
 videoCoverElement.classList.remove('visually-hidden');
 videoElement.removeAttribute('controls');
 
 function playVideo(media) {
-  media.play();
-  media.setAttribute('controls', 'controls');
-}
-
-mainWrapperElement.classList.remove('wrapper--nojs');
-
-videoContainerElement.addEventListener('click', () => {
   if (!videoCoverElement.classList.contains('visually-hidden')) {
     videoCoverElement.classList.add('visually-hidden');
+    media.play();
+    media.setAttribute('controls', 'controls');
+  }
+}
+
+const isSpaceKey = (evt) => (
+  evt.key === ' '
+);
+
+const onLabelSpaceKeydown = (evtSpaceKeydown) => {
+  if (isSpaceKey(evtSpaceKeydown)) {
     playVideo(videoElement);
   }
+};
+
+videoContainerElement.addEventListener('click', () => {
+  playVideo(videoElement);
 });
+
+videoContainerElement.addEventListener('keydown', onLabelSpaceKeydown);
+
 
 tabsContainerElement.addEventListener('click', (evt) => {
   if (!evt.target.classList.contains('subscription__button-tab--active') && evt.target.classList.contains('subscription__button-tab')) {
@@ -52,9 +74,60 @@ const glide = new Glide('.glide', {
 
 glide.mount();
 
-const feedback = new Glide('.glide-feedback', {
+const feedback = new Glide('.glide--feedback', {
   type: 'slider',
   perView: 1,
 });
 
 feedback.mount();
+
+if (collectionOfComments.length < 2) {
+  leftArrowElement.classList.add('visually-hidden');
+  rightArrowElement.classList.add('visually-hidden');
+} else {
+  leftArrowElement.classList.remove('visually-hidden');
+  rightArrowElement.classList.remove('visually-hidden');
+
+  feedback.on('move.after', function () {
+    if (collectionOfComments[0].classList.contains('glide__slide--active')) {
+      leftArrowElement.setAttribute('disabled', 'disabled');
+    } else {
+      leftArrowElement.removeAttribute('disabled');
+    }
+    if (collectionOfComments[collectionOfComments.length - 1].classList.contains('glide__slide--active')) {
+      rightArrowElement.setAttribute('disabled', 'disabled');
+    } else {
+      rightArrowElement.removeAttribute('disabled');
+    }
+  });
+
+}
+
+const validateInput = (element, re, text) => {
+  element.addEventListener('input', () => {
+    const nameInputArray = element.value.split(' ');
+
+    if (element.value.endsWith(' ')) {
+      nameInputArray.pop();
+    }
+
+    const booleanNameInputArray = nameInputArray.map((nameValidity) =>
+      re.test(nameValidity)
+    );
+
+    nameInputArray.forEach((word) => {
+
+      if (!re.test(word) || booleanNameInputArray.includes(false)) {
+        element.setCustomValidity(text);
+        submitButtonElement.setAttribute('disabled', 'disabled');
+      } else {
+        element.setCustomValidity('');
+        submitButtonElement.removeAttribute('disabled');
+      }
+      element.reportValidity();
+    });
+  });
+};
+
+validateInput(nameInputElement, nameInputRe, 'Здесь могут быть только буквы и цифры');
+validateInput(phoneInputElement, phoneInputRe, 'Здесь могут быть только цифры');

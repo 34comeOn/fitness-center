@@ -24,6 +24,7 @@
   line-height: 26px;
   margin-top: 34px;
   color: $color-default-white;
+  position: relative;
 
   @include vp-1199 {
     font-size: 22px;
@@ -33,10 +34,24 @@
     font-size: 18px;
     line-height: 16px;
     margin-top: 26px;
+
+    &:hover {
+      &::after {
+        top: 20px;
+      }
+    }
   }
 
   &:hover {
-    border-bottom: 1px solid $color-default-white;
+    &::after {
+      width: stretch;
+      position: absolute;
+      content: "";
+      height: 0.5px;
+      top: 29px;
+      background-color: $color-default-white;
+      right: 0;
+    }
   }
 
   &:focus {

@@ -160,7 +160,7 @@
   }
 }
 
-.trial__name-input {
+.trial input[name="name"] {
   @include vp-1199 {
     margin-right: 44px;
   }

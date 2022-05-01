@@ -243,6 +243,14 @@
       border-radius: 50%;
     }
   }
+
+  @include retina {
+    background-image: url("../img/gallery/background/video-cover@2x.jpg");
+
+    &::before {
+      background-image: url("../img/gallery/background/video-button@2x.png");
+    }
+  }
 }
 
 .about__video {

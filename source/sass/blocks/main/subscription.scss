@@ -42,6 +42,12 @@
       display: none;
     }
   }
+
+  @include retina {
+    &::after {
+      background-image: url("../img/gallery/background/barbells@2x.png");
+    }
+  }
 }
 
 .subscription__container h2 {
@@ -409,9 +415,7 @@
   user-select: none;
 
   &:hover {
-    background: linear-gradient(to right, $color-gradient-hover-red 0%, $color-gradient-hover-blue 100%);
-    border: none;
-    color: $color-default-white;
+    outline: 5px solid $color-form-border;
   }
 
   &:focus {
@@ -439,4 +443,10 @@
     width: 65vw;
     height: 20.5vw;
   }
+}
+
+.subscription__card:hover a {
+  background: linear-gradient(to right, $color-gradient-hover-red 0%, $color-gradient-hover-blue 100%);
+  border: none;
+  color: $color-default-white;
 }

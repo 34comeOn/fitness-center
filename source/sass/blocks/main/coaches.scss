@@ -43,7 +43,8 @@
 
 .coaches__image {
   margin: 0 auto;
-  z-index: -1;
+  z-index: 1;
+  object-fit: cover;
 
   @include vp-1365 {
     width: 18.9vw;
@@ -59,6 +60,10 @@
     width: 70.1vw;
     height: 85.5vw;
   }
+}
+
+.coaches__info-wrapper:hover .coaches__image {
+  z-index: -1;
 }
 
 .coaches__slide {
@@ -159,6 +164,7 @@
   display: none;
   margin-bottom: auto;
   user-select: none;
+  z-index: 2;
 }
 
 .coaches__info-wrapper:hover .coaches__details-block,
@@ -307,7 +313,8 @@
   }
 
   &:focus {
-    background-color: $color-advantages-main;
+    outline: 3px solid $color-default-black;
+    outline-offset: 5px;
   }
 }
 
