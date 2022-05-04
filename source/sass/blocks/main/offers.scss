@@ -3,7 +3,7 @@
 
   @include vp-1199 {
     padding: 100px 45px;
-    padding-bottom: 58px;
+    padding-bottom: 61px;
   }
 
   @include vp-767 {
@@ -13,7 +13,8 @@
 }
 
 .offers__container h2 {
-  font-size: 52.5px;
+  font-size: 49px;
+  letter-spacing: 1.6px;
   font-family: $ff-placeholder-decorative-bold;
   font-weight: 700;
   text-transform: uppercase;
@@ -59,8 +60,8 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: 8.5vw;
-    min-height: 600px;
+    margin-bottom: 9.1vw;
+    min-height: 598px;
     height: min-content;
   }
 }
@@ -139,7 +140,7 @@
 .offers__details-main a {
   margin-top: auto;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   width: max-content;
   position: relative;
   color: $color-default-white;
@@ -188,9 +189,7 @@
   }
 }
 
-.offers__main img {
-  object-fit: cover;
-  object-position: 36%;
+.offers__image-wrapper {
   width: 50%;
 
   @include vp-1199 {
@@ -199,6 +198,17 @@
 
   @include vp-767 {
     width: 100%;
+    height: 93.3vw;
+  }
+}
+
+.offers__main img {
+  object-fit: cover;
+  object-position: 37%;
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
     height: 93.3vw;
     object-position: 1% 18%;
   }
@@ -219,14 +229,13 @@
 
 .offers__item {
   width: 100%;
-  padding: 30px;
-  padding-bottom: 23px;
+  padding: 33px 30px 25px;
   box-sizing: border-box;
   border: 7px solid;
   border-image: linear-gradient(151deg, $color-gradient-border-red -1%, $color-gradient-border-blue 102%);
   border-image-slice: 1;
-  min-height: 209px;
-  margin-bottom: 42px;
+  min-height: 211px;
+  margin-bottom: 39px;
   color: $color-advantages-main;
 
   display: flex;

@@ -52,6 +52,7 @@
 .event__image {
   width: 660px;
   height: 500px;
+  background-color: $color-text-dark;
 
   @include vp-1365 {
     width: 56.89%;

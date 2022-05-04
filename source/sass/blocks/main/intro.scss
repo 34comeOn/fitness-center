@@ -1,6 +1,6 @@
 .intro {
   padding-top: 102px;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
   background: conic-gradient(from 86deg at 22% 41%, $color-gradient-red 4%, $color-gradient-blue 26%, $color-gradient-red 83%);
   z-index: -1;
 
@@ -35,8 +35,8 @@
   width: min-content;
 
   @include vp-1199 {
-    padding-right: 5%;
-    padding-left: 3%;
+    padding-right: 5.5%;
+    padding-left: 7.5%;
     margin-right: -3px;
   }
 
@@ -64,13 +64,15 @@
   line-height: 59px;
   font-family: $ff-placeholder-decorative-regular;
   color: $color-default-white;
-  margin-top: 18px;
+  margin-top: 17px;
   display: block;
 
   @include vp-1199 {
     font-size: 34px;
     line-height: 41px;
     margin-top: 47px;
+    margin-right: -4px;
+    letter-spacing: 0.9px;
   }
 
   @include vp-767 {
@@ -81,24 +83,29 @@
 }
 
 .intro__text-wrapper h2 {
-  font-size: 116px;
-  line-height: 108px;
+  font-size: 109px;
+  line-height: 109px;
   font-family: $ff-placeholder-decorative-bold;
   font-weight: 700;
   color: $color-default-white;
   margin-top: 9px;
-  width: 300px;
+  margin-right: -3px;
+  width: 302px;
+  letter-spacing: 2.9px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 $color-default-white, 0 -1px 0 $color-default-white, 1px 0 0 $color-default-white, -1px 0 0 $color-default-white, 1px 1px 0 $color-default-white, 1px -1px 0 $color-default-white, -1px 1px 0 $color-default-white, -1px -1px 0 $color-default-white, 0 2px 0 $color-default-white, 0 -2px 0 $color-default-white, 2px 0px 0 $color-default-white, -2px 0 0 $color-default-white, 2px 2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, -2px -2px 0 $color-default-white;
 
   @include vp-1199 {
-    font-size: 92px;
+    font-size: 86px;
     line-height: 85px;
     margin-top: 6px;
     width: 270px;
+    letter-spacing: 2.4px;
   }
 
   @include vp-767 {
     width: 290px;
-    font-size: 84px;
+    font-size: 78px;
     line-height: 78px;
     margin-top: 6px;
   }
@@ -110,20 +117,21 @@
   border: solid 4px $color-default-white;
   width: 234px;
   height: 61px;
-  margin-top: -103px;
+  margin-top: -99px;
   padding-top: 15px;
   margin-left: auto;
   margin-right: -4px;
   user-select: none;
 
   @include vp-1199 {
-    margin-top: -98px;
+    margin-top: -93px;
+    margin-right: -7px;
     width: 187px;
   }
 
   @include vp-767 {
     margin-right: 0;
-    margin-top: -91px;
+    margin-top: -86px;
     width: 100%;
     height: 63px;
   }
@@ -144,25 +152,29 @@
 .intro__list {
   position: relative;
   left: -262px;
-  top: -186px;
+  top: -182px;
 
   @include vp-1199 {
     left: -208px;
-    top: -157px;
+    top: -150px;
   }
 
   @include vp-767 {
     left: -176px;
-    top: -145px;
+    top: -141px;
   }
 }
 
 .intro__img-container {
   width: 43%;
   margin-right: auto;
+  background-color: $color-footer-black;
 
   @include vp-1199 {
     margin-right: 0;
+    width: 324px;
+    min-width: 324px;
+    height: 390px;
   }
 
   @include vp-767 {

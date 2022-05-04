@@ -689,7 +689,7 @@ button,
 
 .intro {
   padding-top: 102px;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
   background: conic-gradient(from 86deg at 22% 41%, #b80027 4%, #003d85 26%, #b80027 83%);
   z-index: -1;
 }
@@ -721,18 +721,22 @@ button,
   line-height: 59px;
   font-family: "BebasNeue-Regular", "Arial", sans-serif;
   color: #ffffff;
-  margin-top: 18px;
+  margin-top: 17px;
   display: block;
 }
 
 .intro__text-wrapper h2 {
-  font-size: 116px;
-  line-height: 108px;
+  font-size: 109px;
+  line-height: 109px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
   color: #ffffff;
   margin-top: 9px;
-  width: 300px;
+  margin-right: -3px;
+  width: 302px;
+  letter-spacing: 2.9px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 2px 0 #ffffff, 0 -2px 0 #ffffff, 2px 0px 0 #ffffff, -2px 0 0 #ffffff, 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff;
 }
 
 .intro__text-wrapper a {
@@ -741,7 +745,7 @@ button,
   border: solid 4px #ffffff;
   width: 234px;
   height: 61px;
-  margin-top: -103px;
+  margin-top: -99px;
   padding-top: 15px;
   margin-left: auto;
   margin-right: -4px;
@@ -766,12 +770,13 @@ button,
 .intro__list {
   position: relative;
   left: -262px;
-  top: -186px;
+  top: -182px;
 }
 
 .intro__img-container {
   width: 43%;
   margin-right: auto;
+  background-color: #030a1a;
 }
 
 .intro__container img {
@@ -899,6 +904,7 @@ button,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #74819c;
   top: 0;
   left: 0;
   width: 365px;
@@ -965,10 +971,11 @@ button,
 
 .subscription__container h2 {
   text-transform: uppercase;
-  font-size: 51px;
+  font-size: 49px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   text-align: center;
   padding-top: 133px;
+  letter-spacing: 1.6px;
 }
 
 .subscription__button-list {
@@ -1241,6 +1248,7 @@ button,
 .event__image {
   width: 660px;
   height: 500px;
+  background-color: #102654;
 }
 
 .event__data-center {
@@ -1477,10 +1485,16 @@ button,
   margin-top: 11px;
   margin-bottom: 65px;
   text-transform: uppercase;
-  font-size: 51px;
-  letter-spacing: 1px;
+  font-size: 49px;
+  letter-spacing: 1.6px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
+}
+
+.coaches__image-wrapper {
+  margin: 0 auto;
+  background-color: #74819c;
+  z-index: 1;
 }
 
 .coaches__image {
@@ -1647,7 +1661,8 @@ button,
 }
 
 .advantages__container h2 {
-  font-size: 52.5px;
+  font-size: 49px;
+  letter-spacing: 1.6px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1896,7 +1911,8 @@ button,
 }
 
 .offers__container h2 {
-  font-size: 52.5px;
+  font-size: 49px;
+  letter-spacing: 1.6px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1959,7 +1975,7 @@ button,
 .offers__details-main a {
   margin-top: auto;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1997,26 +2013,30 @@ button,
   color: #ffffff;
 }
 
+.offers__image-wrapper {
+  width: 50%;
+}
+
 .offers__main img {
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: 36%;
-  object-position: 36%;
-  width: 50%;
+  -o-object-position: 37%;
+  object-position: 37%;
+  width: 100%;
+  height: 100%;
 }
 
 .offers__item {
   width: 100%;
-  padding: 30px;
-  padding-bottom: 23px;
+  padding: 33px 30px 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 7px solid;
   -o-border-image: -o-linear-gradient(299deg, #d10a42 -1%, #00359f 102%);
   border-image: linear-gradient(151deg, #d10a42 -1%, #00359f 102%);
   border-image-slice: 1;
-  min-height: 209px;
-  margin-bottom: 42px;
+  min-height: 211px;
+  margin-bottom: 39px;
   color: #1c3374;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2170,7 +2190,8 @@ button,
 }
 
 .feedback__container h2 {
-  font-size: 52.5px;
+  font-size: 49px;
+  letter-spacing: 1.6px;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -2343,12 +2364,12 @@ button,
   letter-spacing: 1.6px;
 }
 
-.trial__form {
+.trial form {
   margin: 0;
   padding: 0;
 }
 
-.trial__fieldset {
+.trial fieldset {
   border: none;
   margin: 0;
   padding: 0;
@@ -2356,7 +2377,7 @@ button,
   position: relative;
 }
 
-.trial__fieldset::after {
+.trial fieldset::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -2366,7 +2387,7 @@ button,
   left: 247px;
 }
 
-.trial__fieldset::before {
+.trial fieldset::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -2943,6 +2964,11 @@ button,
     width: 100vw;
   }
 
+  .coaches__image-wrapper {
+    width: 18.9vw;
+    height: 21.5vw;
+  }
+
   .coaches__image {
     width: 18.9vw;
     height: 21.5vw;
@@ -3035,8 +3061,8 @@ button,
   }
 
   .intro__text-wrapper {
-    padding-right: 5%;
-    padding-left: 3%;
+    padding-right: 5.5%;
+    padding-left: 7.5%;
     margin-right: -3px;
   }
 
@@ -3048,27 +3074,34 @@ button,
     font-size: 34px;
     line-height: 41px;
     margin-top: 47px;
+    margin-right: -4px;
+    letter-spacing: 0.9px;
   }
 
   .intro__text-wrapper h2 {
-    font-size: 92px;
+    font-size: 86px;
     line-height: 85px;
     margin-top: 6px;
     width: 270px;
+    letter-spacing: 2.4px;
   }
 
   .intro__text-wrapper a {
-    margin-top: -98px;
+    margin-top: -93px;
+    margin-right: -7px;
     width: 187px;
   }
 
   .intro__list {
     left: -208px;
-    top: -157px;
+    top: -150px;
   }
 
   .intro__img-container {
     margin-right: 0;
+    width: 324px;
+    min-width: 324px;
+    height: 390px;
   }
 
   .intro__container img {
@@ -3178,6 +3211,7 @@ button,
   .subscription__container h2 {
     font-size: 44px;
     padding-top: 109px;
+    letter-spacing: 0.4px;
   }
 
   .subscription__button-list {
@@ -3342,6 +3376,11 @@ button,
     font-size: 41px;
     letter-spacing: 1.7px;
     text-align: center;
+  }
+
+  .coaches__image-wrapper {
+    width: 34.6vw;
+    height: 38.3vw;
   }
 
   .coaches__image {
@@ -3554,7 +3593,7 @@ button,
 
   .offers__container {
     padding: 100px 45px;
-    padding-bottom: 58px;
+    padding-bottom: 61px;
   }
 
   .offers__container h2 {
@@ -3607,7 +3646,7 @@ button,
     top: 2.1vw;
   }
 
-  .offers__main img {
+  .offers__image-wrapper {
     width: 59%;
   }
 
@@ -3696,17 +3735,17 @@ button,
     letter-spacing: 0.8px;
   }
 
-  .trial__fieldset {
+  .trial fieldset {
     margin-right: 30px;
   }
 
-  .trial__fieldset::after {
+  .trial fieldset::after {
     width: 205px;
     top: 26px;
     left: 269px;
   }
 
-  .trial__fieldset::before {
+  .trial fieldset::before {
     width: 205px;
     top: 26px;
     left: 3px;
@@ -3867,21 +3906,21 @@ button,
 
   .intro__text-wrapper h2 {
     width: 290px;
-    font-size: 84px;
+    font-size: 78px;
     line-height: 78px;
     margin-top: 6px;
   }
 
   .intro__text-wrapper a {
     margin-right: 0;
-    margin-top: -91px;
+    margin-top: -86px;
     width: 100%;
     height: 63px;
   }
 
   .intro__list {
     left: -176px;
-    top: -145px;
+    top: -141px;
   }
 
   .intro__img-container {
@@ -4137,6 +4176,11 @@ button,
     letter-spacing: 1.4px;
   }
 
+  .coaches__image-wrapper {
+    width: 70.1vw;
+    height: 85.5vw;
+  }
+
   .coaches__image {
     width: 70.1vw;
     height: 85.5vw;
@@ -4359,8 +4403,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 8.5vw;
-    min-height: 600px;
+    margin-bottom: 9.1vw;
+    min-height: 598px;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
@@ -4403,8 +4447,12 @@ button,
     top: 4.7vw;
   }
 
-  .offers__main img {
+  .offers__image-wrapper {
     width: 100%;
+    height: 93.3vw;
+  }
+
+  .offers__main img {
     height: 93.3vw;
     -o-object-position: 1% 18%;
     object-position: 1% 18%;
@@ -4537,23 +4585,23 @@ button,
     margin-right: auto;
   }
 
-  .trial__form {
+  .trial form {
     width: 100%;
   }
 
-  .trial__fieldset {
+  .trial fieldset {
     margin-right: 0;
     display: block;
     width: 100%;
   }
 
-  .trial__fieldset::after {
+  .trial fieldset::after {
     width: 100%;
     top: 86px;
     left: 0;
   }
 
-  .trial__fieldset::before {
+  .trial fieldset::before {
     width: 100%;
     top: 26px;
     left: 0;
