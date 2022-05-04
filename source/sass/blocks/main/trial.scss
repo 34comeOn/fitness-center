@@ -40,8 +40,8 @@
 
   @include vp-767 {
     font-size: 32.7px;
-    margin-bottom: 40.2px;
-    margin-top: 72.2px;
+    margin-bottom: 31.2px;
+    margin-top: 63.2px;
     margin-right: auto;
   }
 }
@@ -175,6 +175,10 @@
 .trial input[name="phone"] {
   @include vp-1199 {
     padding-left: 7px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
   }
 }
 

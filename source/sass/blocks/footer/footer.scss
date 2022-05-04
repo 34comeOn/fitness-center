@@ -68,6 +68,7 @@
   @include vp-767 {
     margin-bottom: 3px;
     justify-content: flex-start;
+    max-width: max-content;
   }
 }
 
@@ -106,6 +107,14 @@
 
 .footer__navigation-item--schedule {
   grid-area: schedule;
+}
+
+.footer__navigation-item--plug {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .footer__navigation-item {

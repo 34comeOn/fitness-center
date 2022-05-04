@@ -2750,6 +2750,10 @@ button,
   grid-area: schedule;
 }
 
+.footer__navigation-item--plug {
+  display: none;
+}
+
 .footer__navigation-item {
   margin-left: 20px;
   margin-right: 20px;
@@ -4590,8 +4594,8 @@ button,
 
   .trial h2 {
     font-size: 32.7px;
-    margin-bottom: 40.2px;
-    margin-top: 72.2px;
+    margin-bottom: 31.2px;
+    margin-top: 63.2px;
     margin-right: auto;
   }
 
@@ -4625,6 +4629,10 @@ button,
 
   .trial input[name="name"] {
     margin-right: 0;
+  }
+
+  .trial input[name="phone"] {
+    padding-left: 0;
   }
 
   .trial button {
@@ -4705,6 +4713,9 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
 
   .footer__navigation-list {
@@ -4746,6 +4757,10 @@ button,
   .footer__navigation-item--schedule {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
+  }
+
+  .footer__navigation-item--plug {
+    display: block;
   }
 
   .footer__navigation-item {
