@@ -393,14 +393,6 @@ template {
 }
 
 @font-face {
-  font-family: "BebasNeue-Bold";
-  src: local("BebasNeue-Bold"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "RobotoCondensed-Light";
   src: local("RobotoCondensed-Light"), url("../fonts/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed-light.woff") format("woff");
   font-weight: 300;
@@ -728,13 +720,14 @@ button,
 .intro__text-wrapper h2 {
   font-size: 109px;
   line-height: 109px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   color: #ffffff;
   margin-top: 9px;
   margin-right: -3px;
   width: 302px;
   letter-spacing: 2.9px;
+  max-width: 400px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 2px 0 #ffffff, 0 -2px 0 #ffffff, 2px 0 0 #ffffff, -2px 0 0 #ffffff, 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff;
 }
@@ -857,7 +850,7 @@ button,
   font-size: 52px;
   line-height: 49px;
   text-transform: uppercase;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   padding-top: 4px;
 }
 
@@ -972,7 +965,7 @@ button,
 .subscription__container h2 {
   text-transform: uppercase;
   font-size: 49px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   text-align: center;
   padding-top: 133px;
   letter-spacing: 1.6px;
@@ -1274,7 +1267,7 @@ button,
   margin-top: 0.5px;
   letter-spacing: 2.2px;
   margin-right: 47px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
 }
 
 .event__item {
@@ -1487,7 +1480,7 @@ button,
   text-transform: uppercase;
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
 }
 
@@ -1663,7 +1656,7 @@ button,
 .advantages__container h2 {
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -1913,7 +1906,7 @@ button,
 .offers__container h2 {
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -2192,7 +2185,7 @@ button,
 .feedback__container h2 {
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -2356,7 +2349,7 @@ button,
 .trial h2 {
   font-size: 48.5px;
   line-height: 64px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -2534,7 +2527,7 @@ button,
 
 .info h2 {
   font-size: 48.5px;
-  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-family: "BebasNeue-Bold", "Arial Narrow";
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 53px;
