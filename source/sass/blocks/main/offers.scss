@@ -68,6 +68,7 @@
 
 .offers__details-main {
   padding: 45px;
+  padding-bottom: 43px;
   box-sizing: border-box;
   background-color: $color-gradient-hover-red;
   color: $color-default-white;
@@ -78,6 +79,7 @@
 
   @include vp-1199 {
     width: 41.2%;
+    padding-bottom: 45px;
   }
 
   @include vp-767 {
@@ -91,7 +93,7 @@
 
 .offers__details-main h3 {
   font-size: 27px;
-  margin-top: -3px;
+  margin-top: -1px;
 
   @include vp-1199 {
     font-size: 3.7vw;
@@ -107,12 +109,13 @@
 }
 
 .offers__details-main strong {
-  font-size: 72px;
+  font-size: 69px;
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  letter-spacing: 1.8px;
 
   @include vp-1199 {
-    font-size: 9.3vw;
+    font-size: 8.9vw;
     margin-bottom: 3vw;
   }
 

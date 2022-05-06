@@ -393,6 +393,14 @@ template {
 }
 
 @font-face {
+  font-family: "BebasNeue-Bold";
+  src: local("BebasNeue-Bold"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "RobotoCondensed-Light";
   src: local("RobotoCondensed-Light"), url("../fonts/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed-light.woff") format("woff");
   font-weight: 300;
@@ -720,7 +728,7 @@ button,
 .intro__text-wrapper h2 {
   font-size: 109px;
   line-height: 109px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   color: #ffffff;
   margin-top: 9px;
@@ -728,7 +736,12 @@ button,
   width: 302px;
   letter-spacing: 2.9px;
   max-width: 400px;
-  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 2px 0 #ffffff, 0 -2px 0 #ffffff, 2px 0 0 #ffffff, -2px 0 0 #ffffff, 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff;
 }
 
@@ -850,7 +863,7 @@ button,
   font-size: 52px;
   line-height: 49px;
   text-transform: uppercase;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   padding-top: 4px;
 }
 
@@ -965,7 +978,7 @@ button,
 .subscription__container h2 {
   text-transform: uppercase;
   font-size: 49px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   text-align: center;
   padding-top: 133px;
   letter-spacing: 1.6px;
@@ -1267,7 +1280,7 @@ button,
   margin-top: 0.5px;
   letter-spacing: 2.2px;
   margin-right: 47px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
 }
 
 .event__item {
@@ -1480,7 +1493,7 @@ button,
   text-transform: uppercase;
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
 }
 
@@ -1655,8 +1668,9 @@ button,
 
 .advantages__container h2 {
   font-size: 49px;
+  line-height: 24px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -1699,6 +1713,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-right: -3px;
 }
 
 .advantages__item--parking {
@@ -1894,7 +1909,7 @@ button,
   font-weight: 400;
   line-height: 21px;
   position: absolute;
-  top: 82px;
+  top: 85px;
   left: 1px;
   color: #2e35ac;
 }
@@ -1906,7 +1921,7 @@ button,
 .offers__container h2 {
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -1936,6 +1951,7 @@ button,
 
 .offers__details-main {
   padding: 45px;
+  padding-bottom: 43px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ed0233;
@@ -1952,13 +1968,14 @@ button,
 
 .offers__details-main h3 {
   font-size: 27px;
-  margin-top: -3px;
+  margin-top: -1px;
 }
 
 .offers__details-main strong {
-  font-size: 72px;
+  font-size: 69px;
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  letter-spacing: 1.8px;
 }
 
 .offers__details-main p {
@@ -2185,7 +2202,7 @@ button,
 .feedback__container h2 {
   font-size: 49px;
   letter-spacing: 1.6px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -2349,7 +2366,7 @@ button,
 .trial h2 {
   font-size: 48.5px;
   line-height: 64px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -2527,7 +2544,7 @@ button,
 
 .info h2 {
   font-size: 48.5px;
-  font-family: "BebasNeue-Bold", "Arial Narrow";
+  font-family: "BebasNeue-Bold", "Arial Narrow", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 53px;
@@ -2560,9 +2577,7 @@ button,
   position: absolute;
   content: "";
   width: 1px;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: stretch;
+  height: 104px;
   background-color: #74819c;
   top: 5px;
   left: 229px;
@@ -3618,6 +3633,7 @@ button,
 
   .offers__details-main {
     width: 41.2%;
+    padding-bottom: 45px;
   }
 
   .offers__details-main h3 {
@@ -3627,7 +3643,7 @@ button,
   }
 
   .offers__details-main strong {
-    font-size: 9.3vw;
+    font-size: 8.9vw;
     margin-bottom: 3vw;
   }
 
@@ -3797,6 +3813,7 @@ button,
   .info__list::before {
     top: 3px;
     left: 300px;
+    height: 129px;
   }
 
   .info__item {
@@ -3926,8 +3943,8 @@ button,
   }
 
   .intro__list {
-    left: -176px;
-    top: -141px;
+    left: -178px;
+    top: -140px;
   }
 
   .intro__img-container {
