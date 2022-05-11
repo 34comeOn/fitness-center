@@ -1,5 +1,6 @@
 .offers__container {
   padding: 120px 103px;
+  padding-bottom: 82px;
 
   @include vp-1199 {
     padding: 100px 45px;
@@ -41,7 +42,7 @@
   width: 100%;
   column-gap: 3.44%;
   grid-template-columns: 48.28% 48.28%;
-  grid-template-rows: 462px;
+  grid-template-rows: min-content;
 
   @include vp-1199 {
     display: flex;
@@ -51,7 +52,9 @@
 
 .offers__main {
   display: flex;
+  flex-direction: row;
   background-color: $color-basic-blue;
+  height: 462px;
 
   @include vp-1199 {
     margin-bottom: 4vw;
@@ -88,6 +91,23 @@
     align-items: center;
     min-height: 299px;
     height: 93.3vw;
+  }
+}
+
+.offers__overflow-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: fill-available;
+  max-height: 460px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    max-height: 49vw;
+  }
+
+  @include vp-767 {
+    max-height: 66vw;
+    align-items: center;
   }
 }
 
@@ -129,6 +149,10 @@
 .offers__details-main p {
   font-size: 18px;
 
+  @include vp-1365 {
+    font-size: calc(2.5vw - 16.1px);
+  }
+
   @include vp-1199 {
     font-size: 2.34vw;
   }
@@ -162,6 +186,7 @@
   @include vp-1199 {
     font-size: 2vw;
     line-height: 2.1vw;
+    padding-bottom: 1px;
 
     &::after {
       top: 2.1vw;

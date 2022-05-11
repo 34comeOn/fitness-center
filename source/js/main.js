@@ -11,9 +11,12 @@ const rightArrowElement = document.querySelector('.feedback__button-right');
 const nameInputElement = document.querySelector('input[name="name"]');
 const phoneInputElement = document.querySelector('input[name="phone"]');
 const submitButtonElement = document.querySelector('.form__button');
+const coachesContainerElement = document.querySelector('.coaches__slides');
+const leftCoachButtonElement = document.querySelector('.coaches__button-left');
+const rightCoachButtonElement = document.querySelector('.coaches__button-right');
 
 const nameInputRe = /[A-Za-zA-Яа-яЁё0-9\s]$/;
-const phoneInputRe = /[0-9]$/;
+const phoneInputRe = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{1,10}$/;
 
 const collectionOfComments = document.querySelectorAll('.feedback__slide');
 
@@ -100,8 +103,37 @@ if (collectionOfComments.length < 2) {
       rightArrowElement.removeAttribute('disabled');
     }
   });
-
 }
+
+coachesContainerElement.addEventListener('keydown', function (evt) {
+  const cardsCollection = coachesContainerElement.querySelectorAll('.coaches__info-wrapper');
+  if (evt.target.classList.contains('coaches__info-wrapper')) {
+    for (let card of cardsCollection) {
+      card.setAttribute('tabindex', '-1');
+    }
+  } else {
+    for (let card of cardsCollection) {
+      card.setAttribute('tabindex', '0');
+    }
+  }
+});
+
+const handleFocusListener = (element) => {
+  element.addEventListener('focus', function () {
+    coachesContainerElement.classList.add('coaches__arrows-active');
+  });
+};
+
+const handleBlurListener = (element) => {
+  element.addEventListener('blur', function () {
+    coachesContainerElement.classList.remove('coaches__arrows-active');
+  });
+};
+
+handleFocusListener(leftCoachButtonElement);
+handleFocusListener(rightCoachButtonElement);
+handleBlurListener(leftCoachButtonElement);
+handleBlurListener(rightCoachButtonElement);
 
 const validateInput = (element, re, text) => {
   element.addEventListener('input', () => {

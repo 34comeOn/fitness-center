@@ -152,10 +152,14 @@
 .about__video-container {
   position: absolute;
   cursor: pointer;
-  top: 78%;
+  top: 408px;
   left: 39.5%;
   width: 364px;
   height: 228px;
+
+  @include vp-1365 {
+    top: 30vw;
+  }
 
   @include vp-1279 {
     left: 41%;

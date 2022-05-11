@@ -83,9 +83,9 @@
   }
 }
 
-.coaches__info-wrapper:hover .coaches__image {
-  z-index: -1;
-}
+// .coaches__info-wrapper:hover .coaches__image {
+//   z-index: -1;
+// }
 
 .coaches__slide {
   position: relative;
@@ -139,6 +139,10 @@
   }
 }
 
+.coaches__arrows-active .glide__slide--active .coaches__info-wrapper {
+  background-color: $color-background-darkblue;
+}
+
 .coaches__info-wrapper strong {
   font-family: $ff-placeholder-main-bold;
   font-weight: 700;
@@ -181,6 +185,13 @@
   }
 }
 
+.coaches__arrows-active .glide__slide--active strong {
+  @include vp-1199 {
+    padding-left: 0;
+    padding-right: 9px;
+  }
+}
+
 .coaches__details-block {
   display: none;
   margin-bottom: auto;
@@ -190,6 +201,10 @@
 
 .coaches__info-wrapper:hover .coaches__details-block,
 .coaches__info-wrapper:focus .coaches__details-block {
+  display: block;
+}
+
+.coaches__arrows-active .glide__slide--active .coaches__details-block {
   display: block;
 }
 

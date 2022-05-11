@@ -38,8 +38,11 @@
                 <span>
                   омск
                 </span>
-                <h2>
+                <h2 class="intro__title intro__title--wide">
                   Фитнес центр
+                </h2>
+                <h2 class="intro__title intro__title--mobile">
+                  Фитнес
                 </h2>
                 <ul class="intro__list list">
                   <li>
@@ -52,6 +55,9 @@
                     Кардио-зона
                   </li>
                 </ul>
+                <h2 class="intro__title intro__title--mobile">
+                  центр
+                </h2>
               </div>
               <a class="intro__button button" href="#subscription" aria-label="Нажать, чтобы узнать о том, какой">
                 Купить абонемент
@@ -353,42 +359,44 @@
           </h2>
           <div class="event__container container">
             <div class="event__info-wrapper">
-              <div class="event__data-center">
-                <h3>
-                  super games
-                </h3>
-                <div class="event__details-block">
-                  <ul class="event__list list">
-                    <li class="event__item">
-                      <h4>
-                        Дата
-                      </h4>
-                      <div class="event__date-wrapper">
-                        <strong>
-                          7
-                        </strong>
-                        <span>
-                          Марта 2019
-                        </span>
-                      </div>
-                    </li>
-                    <li class="event__item">
-                      <h4>
-                        Время
-                      </h4>
-                      <b>
-                        12:00
-                      </b>
-                    </li>
-                  </ul>
+              <div class="event__block-overflow">
+                <div class="event__data-center">
+                  <h3>
+                    super games
+                  </h3>
+                  <div class="event__details-block">
+                    <ul class="event__list list">
+                      <li class="event__item">
+                        <h4>
+                          Дата
+                        </h4>
+                        <div class="event__date-wrapper">
+                          <strong>
+                            7
+                          </strong>
+                          <span>
+                            Марта 2019
+                          </span>
+                        </div>
+                      </li>
+                      <li class="event__item">
+                        <h4>
+                          Время
+                        </h4>
+                        <b>
+                          12:00
+                        </b>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <span>
+                  Ежегодные соревнования по CrossFit
+                </span>
+                <a class="button" href="#" aria-label="перейти по ссылке чтобы">
+                  заполнить заявку
+                </a>
               </div>
-              <span>
-                Ежегодные соревнования по CrossFit
-              </span>
-              <a class="button" href="#" aria-label="перейти по ссылке чтобы">
-                заполнить заявку
-              </a>
             </div>
             <div class="event__image">
               <picture>
@@ -575,9 +583,9 @@
                     </div>
                   </li>
                   <li class="coaches__slide glide__slide">
-                    <div class="coaches__info-wrapper" tabindex="0">
+                    <div class="coaches__info-wrapper">
                       <strong>
-                        Александр Пашков
+                        Александр Пышков
                       </strong>
                       <div class="coaches__details-block">
                         <span>
@@ -603,7 +611,7 @@
                     </div>
                   </li>
                   <li class="coaches__slide glide__slide">
-                    <div class="coaches__info-wrapper" tabindex="0">
+                    <div class="coaches__info-wrapper">
                       <strong>
                         Мария Кетова
                       </strong>
@@ -739,18 +747,20 @@
             <div class="offers__frame">
               <div class="offers__main">
                 <div class="offers__details-main">
-                  <h3>
-                    Год
-                  </h3>
-                  <strong>
-                    4999
-                  </strong>
-                  <p>
-                    Безлимитный абонемент в&nbsp;тренажерный зал
-                  </p>
-                  <a href="#" aria-label="нажать чтобы узнать об акции">
-                    подробнее
-                  </a>
+                  <div class="offers__overflow-wrapper">
+                    <h3>
+                      Год
+                    </h3>
+                    <strong>
+                      4999
+                    </strong>
+                    <p>
+                      Безлимитный абонемент в&nbsp;тренажерный зал
+                    </p>
+                    <a href="#" aria-label="нажать чтобы узнать об акции">
+                      подробнее
+                    </a>
+                  </div>
                 </div>
                 <div class="offers__image-wrapper">
                   <picture>
@@ -801,10 +811,10 @@
                     <picture class="feedback__image-wrapper">
                       <img  width="80" height="80" src="img/gallery/feedback/feedback@1x.jpg" srcset="img/gallery/feedback/feedback@1x.webp 1x, img/gallery/feedback/feedback@2x.webp 2x" loading="lazy" alt="фото автора отзыва">
                     </picture>
-                    <b tabindex="0">
+                    <b>
                       Анна Орлова
                     </b>
-                    <p tabindex="0">
+                    <p>
                       &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
                     </p>
                   </li>
@@ -812,10 +822,10 @@
                     <picture class="feedback__image-wrapper">
                       <img  width="80" height="80" src="img/gallery/feedback/feedback@1x.jpg" srcset="img/gallery/feedback/feedback@1x.webp 1x, img/gallery/feedback/feedback@2x.webp 2x" loading="lazy" alt="фото автора отзыва">
                     </picture>
-                    <b tabindex="0">
+                    <b>
                       Елена Штин
                     </b>
-                    <p tabindex="0">
+                    <p>
                       &laquo;Профессионализм тренера и&nbsp;умение мобилизовать людей всегда отличает Анну Павлову. Супер!!!&raquo;
                     </p>
                   </li>
@@ -823,10 +833,10 @@
                     <picture class="feedback__image-wrapper">
                       <img  width="80" height="80" src="img/gallery/feedback/feedback@1x.jpg" srcset="img/gallery/feedback/feedback@1x.webp 1x, img/gallery/feedback/feedback@2x.webp 2x" loading="lazy" alt="фото автора отзыва">
                     </picture>
-                    <b tabindex="0">
+                    <b>
                       Елена Дридигер
                     </b>
-                    <p tabindex="0">
+                    <p>
                       &laquo;Анна Павлова&nbsp;&mdash; умничка, очень вежливо и&nbsp;профессионально объяснила мне функциональный тренинг, действие и&nbsp;взаимодействие всех необходимых тренажеров. Провела полноценную тренировку. Спасибо огромное!&raquo;
                     </p>
                   </li>

@@ -97,7 +97,7 @@
     margin-top: 7px;
     line-height: 26px;
     max-width: 70px;
-    overflow: auto;
+    overflow: hidden;
     min-height: 63px;
   }
 }
@@ -112,7 +112,7 @@
   width: 334px;
   margin-left: 28px;
   margin-top: 13px;
-  overflow-y: auto;
+  overflow: hidden;
   max-height: 90px;
 
   @include vp-767 {
