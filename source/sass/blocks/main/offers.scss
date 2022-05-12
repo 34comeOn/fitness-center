@@ -54,18 +54,18 @@
   display: flex;
   flex-direction: row;
   background-color: $color-basic-blue;
-  height: 462px;
+  min-height: 462px;
+  height: min-content;
 
   @include vp-1199 {
     margin-bottom: 4vw;
-    height: 60.1vw;
+    min-height: 60.1vw;
   }
 
   @include vp-767 {
     flex-direction: column;
     margin-bottom: 9.1vw;
     min-height: 598px;
-    height: min-content;
   }
 }
 
@@ -90,24 +90,7 @@
     width: 100%;
     align-items: center;
     min-height: 299px;
-    height: 93.3vw;
-  }
-}
-
-.offers__overflow-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: fill-available;
-  max-height: 460px;
-  overflow: hidden;
-
-  @include vp-1199 {
-    max-height: 49vw;
-  }
-
-  @include vp-767 {
-    max-height: 66vw;
-    align-items: center;
+    height: min-content;
   }
 }
 
