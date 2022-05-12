@@ -30,18 +30,12 @@
   flex-direction: column;
   background-color: $color-gradient-hover-red;
   width: 500px;
-  min-height: 500px;
   padding: 87px 78px 83px 78px;
-  height: min-content;
+  height: auto;
 
   @include vp-1365 {
     width: 43.1%;
-    min-height: 36.7vw;
     padding: 6.3vw 5.7vw;
-  }
-
-  @include vp-1199 {
-    min-height: 38vw;
   }
 
   @include vp-767 {
@@ -342,7 +336,7 @@
   }
 
   @include vp-767 {
-    margin: 5px auto 0 -0.11vw;
+    margin: 3.5vw auto 0 -0.11vw;
     font-size: 3.4vw;
     padding-top: calc(6.5vw - 13px);
     width: 63.8vw;
