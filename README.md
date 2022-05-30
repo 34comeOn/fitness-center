@@ -1,3 +1,17 @@
+3rd developing skills project "Fitness-center" (responsive layout).
+
+Tools & technologies:
+
+-Figma
+-HTML
+-CSS
+-JS
+-GlideSlider
+-Git
+-Gulp
+-BEM
+-Sass
+
 ## [Гайд по работе со сборкой](/GUIDE.md) 📕
 
 ## Краткая инструкция по работе
